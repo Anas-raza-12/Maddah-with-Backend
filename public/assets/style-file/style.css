@@ -1146,6 +1146,18 @@ margin: 0vh 5%;
     color: white;
     font-weight: 700;
     border-radius: 5px;}
+    .Product-details > .first-container > .row > .col-lg-7 > h4{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .Product-details > .first-container > .row > .col-lg-7 > .aboutToProduct{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+     color: #000;
+    }
+
 /* }
 .Product-details > .second-container {
     margin: 5vh auto;

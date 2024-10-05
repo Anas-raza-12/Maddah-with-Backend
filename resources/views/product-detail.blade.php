@@ -38,28 +38,13 @@
                 @endif
             </h1>
             <h6 class="d-flex">Availability : <span>{{ $product->stock_status == 'instock' ? 'In stock' : 'Out of Stock' }}</span></h6>
-            {{-- <p>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.</p>
-
-            <div class="d-flex item-color">
-                <span style="background: #23a6f0;"></span>
-                <span style="background: #23856d;"></span>
-                <span style="background: #e77c40;"></span>
-                <span style="background: #252b42;"></span>
-            </div> --}}
+            
             <div class="buy-now d-flex">
                 <button>Buy Now</button>
-                {{-- <div class="d-flex">
-                    <span>
-                        <a href="/"><i class="fa-regular fa-heart"></i></a>
-                    </span>
-                    <span>
-                        <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </span>
-                    <span>
-                        <a href="/"><i class="fa-regular fa-eye"></i></a>
-                    </span>
-                </div> --}}
+               
             </div>
+            <h4>About To Products</h4>
+            <p class="aboutToProduct">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 </div>
