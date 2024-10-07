@@ -77,7 +77,7 @@
     </p>
     <div class="row">
         @foreach ($members as $member)
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-2 col-md-3">
                 <img src="{{ asset('uploads/members/' . $member->image ) }}" alt="" />
                 <h4>{{ $member->name }}</h4>
                 <p>{{ $member->profession }}</p>

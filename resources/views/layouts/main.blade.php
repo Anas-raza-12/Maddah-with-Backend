@@ -31,10 +31,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    
     <!-- ------------------Animation Link ------------------ -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
+
+
+
+    
+ </head>
   <body class="@yield('bodyClass')">
     <header>
       <!-- Top Header Section -->
@@ -242,4 +247,12 @@
   <script>
     AOS.init();
   </script>
-</html>
+  <!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<!-- Include Slick JS -->
+<script type="text/javascript" src="path/to/slick.min.js"></script>
+
+   </html>

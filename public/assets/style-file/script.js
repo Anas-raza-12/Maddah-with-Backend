@@ -50,3 +50,11 @@ countUpOrDown(
   "0.5s"
 );
 
+$('.lazy').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
+
+
+

@@ -8,20 +8,59 @@
         <i class="fa-solid fa-angle-right"></i> <a href=""> Shop</a>
     </div>
     <div class="row">
-        <div class="col-lg-5 col-md-6 product-slider">
-            <div class="main-img">
-                <img src="{{ asset('uploads/products/' . $product->featured_image ) }}" id="main-image" width="100%">
-            </div>
-            <div class="d-flex gap-2 thumbnails">
-                @php
-                    $images = explode(',', $product->images);
-                @endphp
+    <div class="col-lg-5 col-md-6 product-slider">
+    <!-- <div class="main-img">
+        <img src="{{ asset('uploads/products/' . $product->featured_image ) }}" id="main-image" width="100%">
+    </div>
+    <div class="d-flex gap-2 thumbnails">
+        @php
+            $images = explode(',', $product->images);
+        @endphp
 
-                @foreach ($images as $image)
-                    <img src="{{ asset('uploads/products/') . '/' .  $image }}" class="thumbnail" id="thumbnail" width="100%">
-                @endforeach
-            </div>
+        @foreach ($images as $key => $image)
+            <img src="{{ asset('uploads/products/') . '/' .  $image }}" class="thumbnail" id="thumb-{{ $key }}" width="100%" style="cursor: pointer;">
+        @endforeach
+    </div> -->
+    <div class = "card-wrapper">
+  <div class = "card">
+    <!-- card left -->
+    <div class = "product-imgs">
+      <div class = "img-display">
+        <div class = "img-showcase">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt = "shoe image">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt = "shoe image">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt = "shoe image">
+          <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image">
         </div>
+      </div>
+      <div class = "img-select">
+        <div class = "img-item">
+          <a href = "#" data-id = "1">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_1.jpg" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "2">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_2.jpg" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "3">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_3.jpg" alt = "shoe image">
+          </a>
+        </div>
+        <div class = "img-item">
+          <a href = "#" data-id = "4">
+            <img src = "https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/shoe_4.jpg" alt = "shoe image">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- card right -->
+ 
+  </div>
+</div>
+</div>
         
           
         <div class="col-lg-7 col-md-6">
@@ -48,47 +87,15 @@
         </div>
     </div>
 </div>
-<!-- <div class="second-container container">
-    {{-- <div class="d-flex">
-        <h4><a href="/">Description </a></h4>
-        <h4><a href="/">Additional Information</a></h4>
-        <h4>
-            <a href="/">Reviews <span id="review">(0) </span> </a>
-        </h4>
-    </div> --}}
-    <div class="row">
-        <div class="col-lg-6 col-md-6 "><img src="{{ asset('uploads/products/' . $product->featured_image) }}" alt="" style="width:500px; height:500px;"/></div>
-        <div class="col-lg-6 col-md-6 d-flex">
-            <div>
-                <h3>About the Product</h3>
-                <p>{{ $product->description }}</p>
-            </div>
-        </div>
-        {{-- <div class="col-lg-4 col-md-6 d-flex">
-            <div>
-                <h3>Features</h3>
 
-                <p id="Feature"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-                <p id="Feature"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-                <p id="Feature"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-                <p id="Feature"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-                <h3>Quality</h3>
-                <p id="Quality"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-                <p id="Quality"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-                <p id="Quality"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-                <p id="Quality"><i class="fa-solid fa-angle-right"></i>the quick fox jumps over the lazy dog</p>
-            </div>
-        </div> --}}
-    </div>
-</div> -->
 <div class="third-container container">
     <h3>BESTSELLER PRODUCTS</h3>
     <hr />
     <div class="row">
         @foreach ($relatedProducts as $relatedProduct)
             <div class="col-lg-2 col-md-4 ">
-                <img src="{{ asset('uploads/products/' . $relatedProduct->featured_image) }}" alt="{{ $relatedProduct->featured_image }}" />
-                <h5>Music Instruments</h5>
+               <a href="{{ route('shop.product.detail', $relatedProduct->slug) }}"> <img src="{{ asset('uploads/products/' . $relatedProduct->featured_image) }}" alt="{{ $relatedProduct->featured_image }}" /></a>
+                    <h5>Music Instruments</h5>
                 <a href="{{ route('shop.product.detail', $relatedProduct->slug) }}">{{ $relatedProduct->title }}</a>
                 <h6>
                     @if ($product->sale_price)
@@ -109,39 +116,25 @@
 <div class="container-fluid">
     <img src="{{ asset('assets/image/desktop-clients-1.png') }}" alt="" />
 </div>
-{{-- <script>
-    const a0 = '../image/carousel-inner.png'; 
-  const a1 = '../image/carousel-inner.png'; 
-        const a2 = '../image/20 1.png'; 
-        const a3 = '../image/16 1.png'; 
-        const a4 = '../image/2 1.png'; 
+ <script>
+    const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
 
-      
-        const image = document.getElementById("main-image");
-        const thumbnail = document.getElementById("thumbnail");
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
 
-        const thumbnail1 = document.getElementById("thumbnail1");
-        const thumbnail2 = document.getElementById("thumbnail2");
-        const thumbnail3 = document.getElementById("thumbnail3");
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
 
-        image.src = a0; 
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
 
-        thumbnail.src = a1; 
-        thumbnail1.src = a2; 
-        thumbnail2.src = a3; 
-        thumbnail3.src = a4; 
-        
-        thumbnail.addEventListener('click', () => {
-            image.src = a1;
-        });
-        thumbnail1.addEventListener('click', () => {
-            image.src = a2;
-        });
-        thumbnail2.addEventListener('click', () => {
-            image.src = a3;
-        });
-        thumbnail3.addEventListener('click', () => {
-            image.src = a4;
-        });
-</script> --}}
+window.addEventListener('resize', slideImage);
+  </script>
 @endsection
