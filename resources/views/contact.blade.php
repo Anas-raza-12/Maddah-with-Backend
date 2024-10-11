@@ -13,8 +13,8 @@
             venenatis egestas pharetra. Morbi sit tellus elementum elementum
             tincidunt morbi id.
           </p>
-          <h4>Phone ; <a href="/"> +0000000000</a></h4>
-          <h4>Fax ; <a href="/"> +0000000000</a></h4>
+          <h4>Phone : <a href="tel:+923410819871"> +92 341 0819871</a></h4>
+          <h4>E mail : <a href="emailto:info@maddahrhythmexpert.com"> info@maddahrhythmexpert.com</a></h4>
           <div class="d-flex justify-content-around">
             <a href="/"><i class="fa-brands fa-square-x-twitter"></i></a>
             <a href="/"><i class="fa-brands fa-square-facebook"></i></a>

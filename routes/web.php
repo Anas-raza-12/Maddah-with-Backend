@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::get('/category', [HomeController::class, 'category'])->name('category');
 Route::post('/promo-email', [HomeController::class, 'promoEmails'])->name('promoemail');
 
 Route::get('/shop', [ShopController::class, 'index'])->name('shop');

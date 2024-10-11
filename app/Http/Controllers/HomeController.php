@@ -32,6 +32,10 @@ class HomeController extends Controller
         return view('contact');
     }
 
+    public function category() {
+        return view('category');
+    }
+
     public function promoEmails(Request $request)
     {
         // Validate the email to be required, valid, and unique

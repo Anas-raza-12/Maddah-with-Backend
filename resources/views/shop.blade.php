@@ -2,6 +2,8 @@
 @section('title', 'Shop')
 @section('bodyClass', 'Shop')
 @section('content')
+
+
 <div class="first-container container">
     <div class="d-flex my-4">
         <h1>Shop</h1>
@@ -10,11 +12,15 @@
             <i class="fa-solid fa-angle-right"></i> <a href="{{ route('shop') }}"> Shop</a>
         </div>
     </div>
-    <div class="row">
+    <div  class="row categories-main ">
         @foreach ($categories as $category)
-            <div class="col-lg-2 col-md-2 col-sm-5 position-relative">
-                <img src="{{ asset('uploads/categories/' . $category->image ) }}" alt="" />
-                <a href="" class="position-absolute">
+           
+               <div data-aos="zoom-in" data-aos-duration="1000" class="col-lg-2  col-md-3 col-sm-4 bd">
+                
+            <div style="background-Image:url('{{ asset('uploads/categories/' . $category->image ) }}');" class="categories">
+
+          <div>
+          <a href="" class="position-absolute">
                     <h6>{{ $category->name }}</h6>
                     <p>
                         @if ($category->products_count > 0)
@@ -24,7 +30,10 @@
                         @endif
                     </p>
                 </a>
+
+          </div>
             </div>
+               </div> 
         @endforeach
     </div>
 </div>
@@ -36,7 +45,7 @@
     <p>Browse our complete range of products</p>
     <div class="row mt-5">
         @foreach ($products as $product)
-            <div class="col-lg-2 col-md-4 col-sm-5">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="col-lg-2 col-md-4 col-sm-5">
                 <a href="{{ route('shop.product.detail', $product->slug) }}">
                     <img src="{{ asset('uploads/products/' . $product->featured_image )}}" alt="{{ $product->featured_image }}" />
                 <h4>Music Instruments</h4>
@@ -59,7 +68,10 @@
     </div>
         {{ $products->links('pagination::bootstrap-5') }}
 </div>
-<div class="container-fluid">
+<div data-aos="zoom-in" data-aos-duration="1000" class="container-fluid">
   <img src="{{ asset('assets/image/desktop-clients-1.png') }}" alt="">
 </div>
+
+
+
 @endsection

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/icon" href="{{ asset('assets/image/LOGO.png') }}">
+   
 
     <title>MADDAH - @yield('title')</title>
     <link rel="stylesheet" href="{{ asset('assets/style-file/style.css')}}" />
@@ -31,10 +33,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    
     <!-- ------------------Animation Link ------------------ -->
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
+ 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    
+ </head>
   <body class="@yield('bodyClass')">
     <header>
       <!-- Top Header Section -->
@@ -43,12 +51,12 @@
           <div
             class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2"
           >
-            <i class="fa-solid fa-phone me-2"></i> (225) 555-0118
+            <i class="fa-solid fa-phone me-2"></i> <a href="tel: +92 341 0819871">+92 341 0819871</a>
           </div>
           <div
             class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2"
           >
-            <i class="fa-regular fa-envelope me-2"></i> example.com
+            <i class="fa-regular fa-envelope me-2"></i> <a href="mailto: info@maddahrhythmexpert.com"> info@maddahrhythmexpert.com</a>
           </div>
           <div
             class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2"
@@ -181,12 +189,12 @@
             </p>
           </div>
           <div class="col-lg-2 col-md-4">
-            <h6>Company</h6>
+            <h6>Maddah Rhythm Expert</h6>
             <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Features</a></li>
-              <li><a href="">Works</a></li>
-              <li><a href="">Career</a></li>
+              <li><a href="{{ route('home') }}">Home</a></li>
+              <li><a href="{{ route('shop') }}">shop</a></li>
+              <li><a href="{{ route('about') }}">About us</a></li>
+              <li><a href="{{ route('contact') }}">Cantact Us</a></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-4">
@@ -242,4 +250,12 @@
   <script>
     AOS.init();
   </script>
-</html>
+  <!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<!-- Include Slick JS -->
+<script type="text/javascript" src="path/to/slick.min.js"></script>
+
+   </html>
