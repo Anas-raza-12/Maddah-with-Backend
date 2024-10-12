@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\OurTeam;
 use App\Models\Product;
 use App\Models\PromoEmail;
@@ -29,11 +30,33 @@ class HomeController extends Controller
     }
 
     public function contact() {
+        $categories = Category::withCount('products')->orderBy('created_at', 'DESC')->get();
         return view('contact');
     }
 
     public function category() {
-        return view('category');
+        $categories = Category::withCount('products')->orderBy('created_at', 'DESC')->get();
+        return view('category', compact('categories'));
+    }
+
+    public function wishlist() {
+        return view('wishlist');
+    }
+
+    public function cart() {
+        return view('cart');
+    }
+
+    public function checkout() {
+        return view('checkout');
+    }
+
+    public function myaccount() {
+        return view('myaccount');
+    }
+
+    public function Error404() {
+        return view('404-error');
     }
 
     public function promoEmails(Request $request)

@@ -12,7 +12,7 @@
             <i class="fa-solid fa-angle-right"></i> <a href="{{ route('shop') }}"> Shop</a>
         </div>
     </div>
-    <div  class="row categories-main ">
+    <div  class="row categories-main  category-section-2 ">
         @foreach ($categories as $category)
            
                <div data-aos="zoom-in" data-aos-duration="1000" class="col-lg-2  col-md-3 col-sm-4 bd">

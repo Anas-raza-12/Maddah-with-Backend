@@ -46,7 +46,7 @@
 <div  class="container-fluid company's-logos p-0 mx-0 my-2">
   <img data-aos="zoom-in" data-aos-duration="1000" width="90%" src="{{ asset('assets/image/desktop-clients-1.png') }}" alt="" />
 </div>
-<div class="second-container container">
+<div class="second-container category-section container">
   <div class="row">
       <div data-aos-duration="1000" data-aos="fade-right" class="col-lg-5 col-sm-12 position-relative first-img">
           <div class="position-absolute">

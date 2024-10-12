@@ -11,6 +11,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/category', [HomeController::class, 'category'])->name('category');
+Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('wishlist');
+Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');
+Route::get('/myaccount', [HomeController::class, 'myaccount'])->name('myaccount');
+Route::get('/404-error', [HomeController::class, 'Error404'])->name('404-error');
 Route::post('/promo-email', [HomeController::class, 'promoEmails'])->name('promoemail');
 
 Route::get('/shop', [ShopController::class, 'index'])->name('shop');
