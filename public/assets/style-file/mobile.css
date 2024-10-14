@@ -1,4 +1,7 @@
 @media (max-width: 445px) {
+    .category-section .row .first-img .position-absolute{
+        width: 100%;
+    }
     .top-line {
         background: #8b4513;
         color: white;
@@ -919,4 +922,78 @@
     .Product-details > .third-container > .row > .col-lg-2 > h6 {
         font-size: 13px;
     }
+/* -----------------------------wishlist ----------------------------- */
+.wishlist > a {
+ 
+    font-size: 14px;
+
+    padding: 0.5vh 3vw;
+    
+}
+.wishlist > h2 {
+
+    font-size: 20px;
+ 
+}
+.wishlist > h2 >span{
+    font-size: 15px;
+}
+
+    .wishlist .wishlist-row > div {
+        width: 47%;
+        margin: 1vh auto;
+    }
+
+
+
+
+/* -----------------------------Cart ----------------------------- */
+.cart .links{
+    margin: 2vh auto;
+}
+.cart .links >a{
+    margin: 0vh 1vw;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+
+.cart  .first-container .row >.col-lg-3{
+    width: 25%;
+   
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.cart  .first-container  .row h3{
+    font-size: 12px; 
+    margin: 0;
+    font-weight:500 ;
+}
+.cart  .first-container  .row img{
+    width: 40px;
+    height: 40px;
+}
+.cart  .first-container  .row p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.cart  .first-container  .row input{
+width: 
+60px;
+border: 1px solid #000;
+padding: 1vh 0vw;
+}
+.cart  .first-container  .row .close {
+    top: 65%;
+    left:83%;
+    color: #8B4513;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+
+
+
 }
