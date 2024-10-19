@@ -675,32 +675,68 @@
     .Contact > .third-container {
         margin: 40px auto;
     }
-    .Contact > .third-container > img {
-        width: 80px;
+    .Contact > .third-container >.row >div {
+        width: 95%;
     }
-    .Contact > .third-container > h5 {
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 700;
-        color: #8b4513;
-        margin: 2vh auto;
-        line-height: -2px;
+    .Contact > .third-container >.row >div >form {
+        margin: 4vh auto;
     }
-    .Contact > .third-container > h1 {
-        font-family: Montserrat;
-        font-size: 40px;
-        font-weight: 700;
-        color: #252b42;
-        line-height: -2px;
-        margin: 10px auto;
-    }
-    .Contact > .third-container a {
-        color: #fff;
-        background-color: #f2bb2a;
-        padding: 1vh 4vw;
-        margin-top: 30px !important;
+    .Contact > .third-container >.row >div >form input{
+        width: 95%;
+        margin: 1vh 1%;
+        border: none;
+        background-color: #f5f5f5;
+        padding: 8px  10px;
         border-radius: 5px;
     }
+    .Contact > .third-container >.row >div >form button{
+        border: none;
+        background: #FEBA2B;
+        color: #fff;
+        font-weight: 500        ;
+        border-radius: 10px;
+        padding: 0.6vh 2vw;
+        float: right ; margin: 1vh 1vw;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+    
+.Error-404 h1{
+ 
+    font-family: Inter;
+font-size: 40px;
+font-weight: 600;
+color: #8B4513;
+
+
+}
+.Error-404 .first-conrtainer{
+    margin: 5vh auto;
+}
+.Error-404 p{
+
+font-family: Poppins;
+font-size: 12px;
+font-weight: 400;
+color: #000000;
+
+}
+.Error-404 .first-conrtainer> a{
+    border: none;
+    background: #FEBA2B;
+    color: #fff;
+    font-weight: 700    ;
+    border-radius: 10px;
+padding: 1.5vh 5vw;
+font-size: 15px;
+margin: 5vh auto;
+}
+
     /* -----------------------------Footer ----------------------------- */
     footer {
         background-image: linear-gradient(to top, #feba2b 93%, #fff 7%);

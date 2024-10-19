@@ -384,14 +384,7 @@
         line-height: -2px;
         margin: 30px auto;
     }
-    .Contact > .third-container a {
-        color: #fff;
-        background-color: #f2bb2a;
-        padding: 1vh 1vw;
-        margin-top: 20px !important;
-        border-radius: 5px;
-    }
-
+   
     /* -----------------------------Footer ----------------------------- */
     footer {
         background-image: linear-gradient(to top, #feba2b 85%, #fff 15%);
@@ -555,4 +548,21 @@
         color: #feba2a;
         font-weight: 700;
     }
+
+    .Error-404 h1{
+ 
+        font-family: Inter;
+    font-size: 80px;
+    font-weight: 600;
+    color: #8B4513;
+    
+    
+    }
+.Error-404 .first-conrtainer>  p{
+    margin: 3vh auto;
+}
+.Error-404 .first-conrtainer>  a{
+    margin: 6vh auto;
+    font-size: 16px;
+}
 }
