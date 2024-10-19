@@ -43,10 +43,8 @@
       </div>
   </div>
 </div>
-<div  class="container-fluid company's-logos p-0 mx-0 my-2">
-  <img data-aos="zoom-in" data-aos-duration="1000" width="90%" src="{{ asset('assets/image/desktop-clients-1.png') }}" alt="" />
-</div>
-<div class="second-container category-section container">
+
+<div class="second-container category-section container my-5">
   <div class="row">
       <div data-aos-duration="1000" data-aos="fade-right" class="col-lg-5 col-sm-12 position-relative first-img">
           <div class="position-absolute">
@@ -148,6 +146,12 @@
           </p>
       </div>
   </div>
+</div>
+<div class="payment-methods container text-center">
+<h1>Easy Payment Methods</h1>
+<p>Lorem ipsum dolor sit amet consectetur. Mattis vitae vitae est venenatis egestas <br> pharetra. Morbi sit tellus elementum elementum tincidunt morbi id. </p>
+<img width="100%" src="{{ asset('assets/image/row.png') }}" alt="">
+
 </div>
 <div class="sixth-container container">
   <h2>Featured Products</h2>

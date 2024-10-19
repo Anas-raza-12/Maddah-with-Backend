@@ -80,6 +80,12 @@
         justify-content: space-between;
         animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
     }
+    .Home .payment-methods >h1{
+        font-size: 30px;
+    }
+    .Home .payment-methods >p{
+        font-size: 14px;
+    }
 
     .category-section .col-lg-12 {
         padding: 0;
@@ -948,10 +954,10 @@
 
 
 /* -----------------------------Cart ----------------------------- */
-.cart .links{
+.links{
     margin: 2vh auto;
 }
-.cart .links >a{
+ .links >a{
     margin: 0vh 1vw;
     font-weight: 600;
     font-size: 13px;
@@ -959,7 +965,7 @@
 
 
 .cart  .first-container .row >.col-lg-3{
-    width: 25%;
+    width: 22%;
    
     display:flex;
     justify-content:center;
@@ -986,7 +992,7 @@ border: 1px solid #000;
 padding: 1vh 0vw;
 }
 .cart  .first-container  .row .close {
-    top: 65%;
+    top: 40%;
     left:83%;
     color: #8B4513;
     cursor: pointer;
