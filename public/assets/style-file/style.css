@@ -1533,7 +1533,7 @@ nav img {
     font-weight: 400;
 }
 .checkOut > .first-container > .row > div > .items {
-    margin: 5vh 0vw;
+    margin: 1vh 0vw ;
     align-items: center;
 }
 .checkOut > .first-container > .row > div > .items div {
@@ -1553,7 +1553,73 @@ nav img {
     font-weight: 400;
 }
 .checkOut > .first-container > .row > div > .payment-section{
-    margin: 4vh 0vw;
+    margin: 2vh 0vw !important;
+}
+.checkOut > .first-container > .row > div > .payment-section >div >div{
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+
+    
+}
+.checkOut > .first-container > .row > div > .payment-section p{
+
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+
+}
+.checkOut > .first-container > .row > div > .payment-method div{
+    align-items: center;
+    justify-content: space-between;
+}
+.checkOut > .first-container > .row > div > .payment-method .image{
+    width: 80px !important;
+    display: flex;
+    justify-content: space-between;
+}
+.checkOut > .first-container > .row > div > .payment-method .image img{
+    width: 40px !important;
+}
+.checkOut > .first-container > .row > div > .payment-method div input{
+    margin-right: 1vw;
+    height: 15px;
+    width: 15px;
+}
+.checkOut > .first-container > .row > div > .payment-method div p{
+    margin: 0;
+}
+.checkOut > .first-container > .row > div > .Coupen-Code{
+justify-content: space-between;
+margin: 3vh 0vw;
+}
+.checkOut > .first-container > .row > div > .Coupen-Code input{
+    width: 50%;
+    border-radius: 10px;
+
+}
+.checkOut > .first-container > .row > div > .Coupen-Code button{
+    width: 45%;
+    border: none;
+    background: #FEBA2B;
+    color: #fff;
+    font-weight: 700
+    ;
+    border-radius: 10px;
+
+
+}
+
+.checkOut > .first-container > .row > div > .Place-Order{
+    width: 45%;
+    border: none;
+    background: #FEBA2B;
+    color: #fff;
+    font-weight: 700
+    ;
+    border-radius: 10px;
+    padding: 1vh 0.5vw;
 }
 /* -----------------------------Footer ----------------------------- */
 
