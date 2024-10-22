@@ -1048,7 +1048,7 @@ nav img {
 .Contact > .third-container {
     margin: 100px auto;
 }
-.Contact > .third-container >.row >div {
+.Contact > .third-container > .row > div {
     box-shadow: 0px 0px 10px 0px #00000021;
     margin: 1vh auto;
     border-radius: 10px;
@@ -1056,75 +1056,67 @@ nav img {
     align-items: center;
     flex-direction: column;
 }
-.Contact > .third-container >.row >div >div{
+.Contact > .third-container > .row > div > div {
     display: flex;
-    justify-content: start !important; 
+    justify-content: start !important;
     flex-direction: column !important;
 }
-.Contact > .third-container >.row >div >div p{
+.Contact > .third-container > .row > div > div p {
     text-align: left;
 }
-.Contact > .third-container >.row >div >div>div>span{
-    background: #8B4513;
+.Contact > .third-container > .row > div > div > div > span {
+    background: #8b4513;
     color: #fff;
-    padding: 5px 9px ;
+    padding: 5px 9px;
     border-radius: 50%;
     margin: 10px 10px 10px 0px;
-
 }
-.Contact > .third-container >.row >div >div>div>h6{
+.Contact > .third-container > .row > div > div > div > h6 {
     margin: 0;
 
-font-family: Poppins;
-font-size: 16px;
-font-weight: 500;
-
-
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-
-.Contact > .third-container >.row >div >div>p{
-
-font-family: Poppins;
-font-size: 14px;
-font-weight: 400;
-margin: 1px 0px;
-
-
+.Contact > .third-container > .row > div > div > p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 1px 0px;
 }
-.Contact > .third-container >.row >div >div>p>a{
-    color: #8B4513;
+.Contact > .third-container > .row > div > div > p > a {
+    color: #8b4513;
 }
-.Contact > .third-container >.row >div >form{
+.Contact > .third-container > .row > div > form {
     margin: 1vh 1vw;
 }
-.Contact > .third-container >.row >div >form input{
+.Contact > .third-container > .row > div > form input {
     width: 30%;
     margin: 1vh 1%;
     border: none;
     background-color: #f5f5f5;
-    padding: 8px  10px;
+    padding: 8px 10px;
     border-radius: 5px;
 }
-.Contact > .third-container >.row >div >form input::placeholder{
-    color:gray;
+.Contact > .third-container > .row > div > form input::placeholder {
+    color: gray;
 }
-.Contact > .third-container >.row >div >form textarea{
+.Contact > .third-container > .row > div > form textarea {
     width: 95%;
     border: none;
-    padding: 8px  10px;
+    padding: 8px 10px;
     background-color: #f5f5f5;
-
 }
-.Contact > .third-container >.row >div >form button{
+.Contact > .third-container > .row > div > form button {
     border: none;
-    background: #FEBA2B;
+    background: #feba2b;
     color: #fff;
-    font-weight: 700
-    ;
+    font-weight: 700;
     border-radius: 10px;
     padding: 0.6vh 1vw;
-    float: right ; margin: 1vh 1vw;
+    float: right;
+    margin: 1vh 1vw;
 }
 /* -----------------------------Product-details----------------------------- */
 .Product-details > .first-container > .d-flex {
@@ -1585,7 +1577,7 @@ margin: 1px 0px;
     font-weight: 400;
 }
 .checkOut > .first-container > .row > div > .items {
-    margin: 1vh 0vw ;
+    margin: 1vh 0vw;
     align-items: center;
 }
 .checkOut > .first-container > .row > div > .items div {
@@ -1604,108 +1596,268 @@ margin: 1px 0px;
     font-size: 14px;
     font-weight: 400;
 }
-.checkOut > .first-container > .row > div > .payment-section{
+.checkOut > .first-container > .row > div > .payment-section {
     margin: 2vh 0vw !important;
 }
-.checkOut > .first-container > .row > div > .payment-section >div >div{
-
+.checkOut > .first-container > .row > div > .payment-section > div > div {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
-
-    
 }
-.checkOut > .first-container > .row > div > .payment-section p{
-
-font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-
+.checkOut > .first-container > .row > div > .payment-section p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
 }
-.checkOut > .first-container > .row > div > .payment-method div{
+.checkOut > .first-container > .row > div > .payment-method div {
     align-items: center;
     justify-content: space-between;
 }
-.checkOut > .first-container > .row > div > .payment-method .image{
+.checkOut > .first-container > .row > div > .payment-method .image {
     width: 80px !important;
     display: flex;
     justify-content: space-between;
 }
-.checkOut > .first-container > .row > div > .payment-method .image img{
+.checkOut > .first-container > .row > div > .payment-method .image img {
     width: 40px !important;
 }
-.checkOut > .first-container > .row > div > .payment-method div input{
+.checkOut > .first-container > .row > div > .payment-method div input {
     margin-right: 1vw;
     height: 15px;
     width: 15px;
 }
-.checkOut > .first-container > .row > div > .payment-method div p{
+.checkOut > .first-container > .row > div > .payment-method div p {
     margin: 0;
 }
-.checkOut > .first-container > .row > div > .Coupen-Code{
-justify-content: space-between;
-margin: 3vh 0vw;
+.checkOut > .first-container > .row > div > .Coupen-Code {
+    justify-content: space-between;
+    margin: 3vh 0vw;
 }
-.checkOut > .first-container > .row > div > .Coupen-Code input{
+.checkOut > .first-container > .row > div > .Coupen-Code input {
     width: 50%;
     border-radius: 10px;
-
 }
-.checkOut > .first-container > .row > div > .Coupen-Code button{
+.checkOut > .first-container > .row > div > .Coupen-Code button {
     width: 45%;
     border: none;
-    background: #FEBA2B;
+    background: #feba2b;
     color: #fff;
-    font-weight: 700
-    ;
+    font-weight: 700;
     border-radius: 10px;
-
-
 }
 
-.checkOut > .first-container > .row > div > .Place-Order{
+.checkOut > .first-container > .row > div > .Place-Order {
     width: 45%;
     border: none;
-    background: #FEBA2B;
+    background: #feba2b;
     color: #fff;
-    font-weight: 700
-    ;
+    font-weight: 700;
     border-radius: 10px;
     padding: 1vh 0.5vw;
 }
 /* -----------------------------404 Error----------------------------- */
-.Error-404 .container{
+.Error-404 .container {
     text-align: center;
 }
-.Error-404 .first-conrtainer{
+.Error-404 .first-conrtainer {
     margin: 5vh auto;
 }
-.Error-404 h1{
- 
+.Error-404 h1 {
     font-family: Inter;
-font-size: 110px;
-font-weight: 600;
-color: #8B4513;
-
-
+    font-size: 110px;
+    font-weight: 600;
+    color: #8b4513;
 }
-.Error-404 p{
-
-font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-color: #000000;
-
+.Error-404 p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
 }
-.Error-404 .first-conrtainer>  a{
+.Error-404 .first-conrtainer > a {
     border: none;
-    background: #FEBA2B;
+    background: #feba2b;
     color: #fff;
-    font-weight: 700    ;
+    font-weight: 700;
     border-radius: 10px;
-padding: 1.5vh 3vw;
-font-size: 20px;
-margin: 5vh auto;
+    padding: 1.5vh 3vw;
+    font-size: 20px;
+    margin: 5vh auto;
+}
+/* -----------------------------User dash board----------------------------- */
+.my-Account > .first-container > h1 {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600 !important;
+}
+.my-Account > .first-container > .row {
+    margin: 3vh auto;
+}
+.my-Account > .first-container > .row > div > h3 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 2vh 0vw;
+}
+.my-Account > .first-container > .row > div > h3:hover {
+    color: #8b4513;
+    cursor: pointer;
+}
+.my-Account > .first-container > .row > div > div > h2 {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    color: #8b4513;
+}
+.my-Account > .first-container > .row > .col-lg-8 {
+    box-shadow: 0px 0px 10px 0px #0000000e;
+    padding: 4vh 2vw;
+    border-radius: 10px;
+}
+.my-Account > .first-container > .row > div > #My-Profile-section .col-lg-6 {
+    margin: 1vh 0vw;
+}
+.my-Account > .first-container > .row > div > #My-Profile-section label {
+    margin: 1vh 0vw;
+    font-family: Poppins;
+    font-size: 17px;
+}
+.my-Account
+    > .first-container
+    > .row
+    > div
+    > #My-Profile-section
+    .col-lg-6
+    input {
+    width: 95%;
+    padding: 1vh 0.5vw;
+    box-shadow: 0px 0px 10px 0px #0000000e;
+    border: none;
+    border-radius: 10px;
+    margin: autor;
+}
+
+.my-Account
+    > .first-container
+    > .row
+    > div
+    > #My-Profile-section
+    .col-lg-12
+    input {
+    width: 100%;
+    padding: 1vh 0.5vw;
+    margin: 1vh 0%;
+    box-shadow: 0px 0px 10px 0px #0000000e;
+    border: none;
+    border-radius: 10px;
+}
+
+.my-Account>.first-container>.row>div>#address-section{
+    display: none;
+    margin: 5vh auto;
+}
+.my-Account>.first-container>.row>div>#Orders-section{
+    display: none;
+}
+
+.my-Account>.first-container>.row>div>.view-btn-section {
+    display: none;
+}
+.my-Account>.first-container>.row>div>#address-section button{
+    padding: 1vh 1vw;
+    border: none;
+    background-color: #febb2b;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 10px;
+}
+.my-Account>.first-container>.row>div>#address-section h4{
+    color: #8b4513;
+    font-size: 16px;
+    margin: 3vh 0vw;
+    font-weight: 700;
+}
+.my-Account>.first-container>.row>div>#address-section h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.my-Account>.first-container>.row>div>#address-section h6 i{
+    color: #8b451359;
+    font-size: 15px;
+    margin: 0px 10px;
+}
+
+.my-Account > .first-container > .row > div > .view-btn-section h3 {
+    font-size: 16px;
+    color: #8b4513;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-top: 8vh !important;
+}
+
+.my-Account > .first-container > .row > div >  div textarea{
+    width: 100%;
+    border-radius: 15px;
+    padding: 1vh 1vw;
+    box-shadow: 0px 0px 10px 0px #00000025;
+border: none; margin: 10px 0px;
+margin: 3vh 0vw;
+}
+.my-Account .orders-container {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.my-Account .orders-table {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #00000025;
+    width: 100%;
+}
+.my-Account .orders-table th,
+.my-Account .orders-table td {
+    padding: 1vh 0.8vw;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.my-Account .orders-table th {
+    background-color: #8b4513;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.my-Account .orders-table td {
+    color: #000;
+    font-size: 12px;
+}
+
+.my-Account.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.my-Account .canceled {
+    background-color: #F34031;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.my-Account .ordered {
+    background-color: #43C710;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.my-Account .view-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 /* -----------------------------Footer ----------------------------- */
