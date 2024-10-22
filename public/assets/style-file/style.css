@@ -1716,6 +1716,7 @@ nav img {
 }
 .my-Account > .first-container > .row > div > #My-Profile-section .col-lg-6 {
     margin: 1vh 0vw;
+
 }
 .my-Account > .first-container > .row > div > #My-Profile-section label {
     margin: 1vh 0vw;
@@ -1751,7 +1752,9 @@ nav img {
     border: none;
     border-radius: 10px;
 }
-
+.my-Account>.first-container>.row>div>#My-Profile-section{
+    display: none;
+}
 .my-Account>.first-container>.row>div>#address-section{
     display: none;
     margin: 5vh auto;
@@ -1770,6 +1773,9 @@ nav img {
     font-weight: 700;
     color: #fff;
     border-radius: 10px;
+}
+.my-Account>.first-container>.row>div>#address-section .for-tab-mobile{
+    display: none;
 }
 .my-Account>.first-container>.row>div>#address-section h4{
     color: #8b4513;

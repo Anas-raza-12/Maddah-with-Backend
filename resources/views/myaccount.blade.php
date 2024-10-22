@@ -15,21 +15,21 @@
         </div>
 
         <div class="col-lg-10">
-            <div data-aos="zoom-in" data-aos-duration="1000" id="My-Profile-section" class="section-content row">
+            <div data-aos="zoom-in" data-aos-duration="1000" id="My-Profile-section" class="section-content row my-4">
                 <h2>Edit Your Profile</h2>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <label for="first-name">First Name</label> <br />
                     <input type="text" name="first-name" id="first-name" placeholder="Enter Your First Name" />
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <label for="last-name">Last Name</label> <br />
                     <input type="text" name="last-name" id="last-name" placeholder="Enter Your Last Name" />
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <label for="last-name">Email</label> <br />
                     <input type="email" name="last-name" id="last-name" placeholder="Enter Your Email" />
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <label for="last-name">Address</label> <br />
                     <input type="text" name="last-name" id="last-name" placeholder="Enter Your Adress" />
                 </div>
@@ -50,12 +50,16 @@
                         The Following addresses will be usedon <br />
                         the checked page by default
                     </p>
-                    <button>Add new</button>
+                    <button class="for-pc">Add new</button>
+                    <button class="for-tab-mobile"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <h4>Shipping Address :</h4>
                 <h6>Anas Raza<i class="fa-solid fa-circle-check"></i></h6>
-                 <textarea name="" id="" placeholder="Enter Your full Address" rows="5"></textarea>
-                 <div class="d-flex gap-3  align-items-center"><h6 class="m-0">Mobile :</h6> <p class="m-0">1234567890</p></div>
+                <textarea name="" id="" placeholder="Enter Your full Address" rows="5"></textarea>
+                <div class="d-flex gap-3 align-items-center">
+                    <h6 class="m-0">Mobile :</h6>
+                    <p class="m-0">1234567890</p>
+                </div>
             </div>
 
             <div data-aos="zoom-in" data-aos-duration="1000" id="Orders-section" class="section-content">
@@ -67,9 +71,9 @@
                             <tr>
                                 <th>OrderNo</th>
                                 <th>Name</th>
-                                <th>Phone</th>
+
                                 <th>Subtotal</th>
-                                <th>Tax</th>
+
                                 <th>Total</th>
                                 <th>Status</th>
                                 <th>Order Date</th>
@@ -82,9 +86,9 @@
                             <tr>
                                 <td>10001</td>
                                 <td>Sudhir Kumar</td>
-                                <td>1234567891</td>
+
                                 <td>$172.00</td>
-                                <td>$36.12</td>
+
                                 <td>$208.12</td>
                                 <td><span class="status canceled">Canceled</span></td>
                                 <td>2024-07-11 00:54:14</td>
@@ -95,9 +99,9 @@
                             <tr>
                                 <td>10003</td>
                                 <td>Sudhir Kumar</td>
-                                <td>1234567891</td>
+
                                 <td>$154.80</td>
-                                <td>$32.51</td>
+
                                 <td>$187.31</td>
                                 <td><span class="status ordered">Ordered</span></td>
                                 <td>2024-06-17 10:41:09</td>
@@ -108,9 +112,9 @@
                             <tr>
                                 <td>10002</td>
                                 <td>Sudhir Kumar</td>
-                                <td>1234567891</td>
+
                                 <td>$71.00</td>
-                                <td>$14.91</td>
+
                                 <td>$85.91</td>
                                 <td><span class="status ordered">Ordered</span></td>
                                 <td>2024-06-11 01:02:55</td>
@@ -191,16 +195,15 @@
         color: #8b4513;
     }
 </style>
-
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll(".section-link");
-
         const profileSection = document.getElementById("My-Profile-section");
         const addressSection = document.getElementById("address-section");
         const ordersSection = document.getElementById("Orders-section");
         const view_btns = document.querySelectorAll(".view-btn");
-        const viewBtnSection = document.querySelector(".view-btn-section"); 
+        const viewBtnSection = document.querySelector(".view-btn-section");
+
         function hideAllSections() {
             profileSection.style.display = "none";
             addressSection.style.display = "none";
@@ -211,7 +214,10 @@
             links.forEach((link) => link.classList.remove("active-link"));
         }
 
-       
+        hideAllSections();
+        profileSection.style.display = "block";
+        links[0].classList.add("active-link");
+
         links.forEach((link) => {
             link.addEventListener("click", function () {
                 hideAllSections();
@@ -219,20 +225,26 @@
 
                 if (this.id === "My-Profile") {
                     profileSection.style.display = "block";
+                    addressSection.style.display = "none";
+                    ordersSection.style.display = "none";
                 } else if (this.id === "address") {
+                    profileSection.style.display = "none";
                     addressSection.style.display = "block";
+                    ordersSection.style.display = "none";
                 } else if (this.id === "Orders") {
+                    profileSection.style.display = "none";
+                    addressSection.style.display = "none";
                     ordersSection.style.display = "block";
+                    viewBtnSection.style.display = "none";
                 }
 
                 this.classList.add("active-link");
             });
         });
 
-        
         view_btns.forEach((btn) => {
             btn.addEventListener("click", function () {
-               
+                ordersSection.style.display = "none";
                 viewBtnSection.style.display = "block";
             });
         });

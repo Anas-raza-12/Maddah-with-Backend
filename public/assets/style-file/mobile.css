@@ -1037,5 +1037,7 @@ padding: 1vh 0vw;
 
 
 
-
+.my-Account>.first-container>.row>div>#address-section .for-tab-mobile{
+    padding: 1vh 3vw;
+}
 }
