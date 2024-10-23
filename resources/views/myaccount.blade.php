@@ -56,6 +56,7 @@
                 <h4>Shipping Address :</h4>
                 <h6>Anas Raza<i class="fa-solid fa-circle-check"></i></h6>
                 <textarea name="" id="" placeholder="Enter Your full Address" rows="5"></textarea>
+                <button></button>
                 <div class="d-flex gap-3 align-items-center">
                     <h6 class="m-0">Mobile :</h6>
                     <p class="m-0">1234567890</p>
@@ -66,17 +67,13 @@
                 <h2>My Orders</h2>
 
                 <div data-aos="zoom-in" data-aos-duration="1000" class="table-responsive my-5">
-                    <table class="orders-table">
+                    <table class="orders-table table">
                         <thead>
                             <tr>
                                 <th>OrderNo</th>
                                 <th>Name</th>
-
                                 <th>Subtotal</th>
-
                                 <th>Total</th>
-                                <th>Status</th>
-                                <th>Order Date</th>
                                 <th>Items</th>
                                 <th>Delivered On</th>
                                 <th>Actions</th>
@@ -86,12 +83,8 @@
                             <tr>
                                 <td>10001</td>
                                 <td>Sudhir Kumar</td>
-
                                 <td>$172.00</td>
-
                                 <td>$208.12</td>
-                                <td><span class="status canceled">Canceled</span></td>
-                                <td>2024-07-11 00:54:14</td>
                                 <td>2</td>
                                 <td>2024-07-07</td>
                                 <td><button class="view-btn">👁</button></td>
@@ -99,12 +92,8 @@
                             <tr>
                                 <td>10003</td>
                                 <td>Sudhir Kumar</td>
-
                                 <td>$154.80</td>
-
                                 <td>$187.31</td>
-                                <td><span class="status ordered">Ordered</span></td>
-                                <td>2024-06-17 10:41:09</td>
                                 <td>2</td>
                                 <td></td>
                                 <td><button class="view-btn">👁</button></td>
@@ -112,12 +101,8 @@
                             <tr>
                                 <td>10002</td>
                                 <td>Sudhir Kumar</td>
-
                                 <td>$71.00</td>
-
                                 <td>$85.91</td>
-                                <td><span class="status ordered">Ordered</span></td>
-                                <td>2024-06-11 01:02:55</td>
                                 <td>1</td>
                                 <td></td>
                                 <td><button class="view-btn">👁</button></td>
@@ -227,10 +212,12 @@
                     profileSection.style.display = "block";
                     addressSection.style.display = "none";
                     ordersSection.style.display = "none";
+                    viewBtnSection.style.display = "none";
                 } else if (this.id === "address") {
                     profileSection.style.display = "none";
                     addressSection.style.display = "block";
                     ordersSection.style.display = "none";
+                    viewBtnSection.style.display = "none";
                 } else if (this.id === "Orders") {
                     profileSection.style.display = "none";
                     addressSection.style.display = "none";
