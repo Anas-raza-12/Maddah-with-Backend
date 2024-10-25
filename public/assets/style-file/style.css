@@ -187,6 +187,14 @@ nav img {
     width: 100px;
     height: auto;
 }
+nav .Right-Side a {
+    color: #feba2a !important;
+    font-weight: 600 !important;
+    font-size: 17px;
+}
+nav .Right-Side a span {
+    font-weight: 600 !important;
+}
 /* -----------------------------Home ----------------------------- */
 .Home > .first-container {
     /* background-image: linear-gradient(to right, #feba2a 85%, #fff 15%); */
@@ -1207,25 +1215,12 @@ nav img {
 .Product-details > .first-container > .row > .col-lg-7 > .buy-now > .d-flex {
     gap: 1vw;
 }
-.Product-details
-    > .first-container
-    > .row
-    > .col-lg-7
-    > .buy-now
-    > .d-flex
-    > span {
+.Product-details > .first-container > .row > .col-lg-7 > .buy-now > .d-flex > span {
     border: 1px solid #e8e8e8;
     border-radius: 50%;
     padding: 0.7vh 0.5vw;
 }
-.Product-details
-    > .first-container
-    > .row
-    > .col-lg-7
-    > .buy-now
-    > .d-flex
-    > span
-    a {
+.Product-details > .first-container > .row > .col-lg-7 > .buy-now > .d-flex > span a {
     color: #000;
 }
 .Product-details > .first-container > .row > .col-lg-7 > .buy-now > button {
@@ -1722,13 +1717,7 @@ nav img {
     font-family: Poppins;
     font-size: 17px;
 }
-.my-Account
-    > .first-container
-    > .row
-    > div
-    > #My-Profile-section
-    .col-lg-6
-    input {
+.my-Account > .first-container > .row > div > #My-Profile-section .col-lg-6 input {
     width: 95%;
     padding: 1vh 0.5vw;
     box-shadow: 0px 0px 10px 0px #0000000e;
@@ -1737,19 +1726,24 @@ nav img {
     margin: autor;
 }
 
-.my-Account
-    > .first-container
-    > .row
-    > div
-    > #My-Profile-section
-    .col-lg-12
-    input {
+.my-Account > .first-container > .row > div > #My-Profile-section .col-lg-12 input {
     width: 100%;
     padding: 1vh 0.5vw;
     margin: 1vh 0%;
     box-shadow: 0px 0px 10px 0px #0000000e;
     border: none;
     border-radius: 10px;
+}
+.my-Account > .first-container > .row > div > #My-Profile-section button {
+    padding: 1vh 1vw;
+    border: none !important;
+    background-color: #febb2b;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 10px;
+    margin: 3vh 1vw;
+    width: 150px;
+    float: right;
 }
 .my-Account > .first-container > .row > div > #My-Profile-section {
     display: none;
@@ -1801,7 +1795,7 @@ nav img {
     margin: 10px 0px;
     margin: 3vh 0vw;
 }
-.my-Account > .first-container > .row > div > a{
+.my-Account > .first-container > .row > div > a {
     color: #f34031;
     font-weight: 600;
 }
@@ -1896,19 +1890,19 @@ footer .d-flex > .d-flex > span {
 footer .d-flex .logos > img {
     width: 300px;
 }
-    .links {
-        margin: 2vh auto;
-    }
-    .links > a {
-        margin: 0vh 1vw;
-        font-weight: 600;
-    }
-    .links > .disable {
-        color: gray;
-    }
-    .links > .Active {
-        color: #000;
-    }
+.links {
+    margin: 2vh auto;
+}
+.links > a {
+    margin: 0vh 1vw;
+    font-weight: 600;
+}
+.links > .disable {
+    color: gray;
+}
+.links > .Active {
+    color: #000;
+}
 .orderConfirmation > .first-container {
     text-align: center;
     margin: 5vh auto;
@@ -1979,6 +1973,30 @@ footer .d-flex .logos > img {
     margin: 0;
 }
 
+
+
+
+
+
+
+
+.orderDetail   .row > div > h3 a {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 2vh 0vw;
+    color: #000;
+}
+.orderDetail  .row > div > h3 :hover {
+    color: #8b4513;
+    cursor: pointer;
+}
+.orderDetail  .container .row > div > a{
+    color: #f34031;
+    font-weight: 600;
+    margin: 4vh 0vw;
+   
+}
 .orderDetail > .first-container > .row > div > .view-btn-section h3 {
     font-size: 16px;
     color: #8b4513;
@@ -2017,8 +2035,8 @@ footer .d-flex .logos > img {
 .orderDetail .orders-table th {
     background-color: #8b4513;
     color: #fff;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .orderDetail .orders-table td {
@@ -2037,6 +2055,7 @@ footer .d-flex .logos > img {
     color: #fff;
     padding: 5px;
     border-radius: 15px;
+   
 }
 
 .orderDetail .ordered {
@@ -2055,9 +2074,10 @@ footer .d-flex .logos > img {
 .orderDetail .container > button {
     border: none;
     padding: 1vh 1vw;
-    margin: 2vh;
+    margin: 3vh 0vw;
     border-radius: 10px;
     background: #f34031;
     color: #fff;
     font-weight: 700;
+    float: right;
 }

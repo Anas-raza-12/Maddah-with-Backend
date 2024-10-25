@@ -41,6 +41,7 @@
                     <input type="text" name="last-name" id="last-name" placeholder="New Passwod" />
                     <input type="text" name="last-name" id="last-name" placeholder="Confirm New Passwod" />
                 </div>
+                <button>Edit Profile</button>
             </div>
 
             <div data-aos="zoom-in" data-aos-duration="1000" id="address-section" class="section-content">
