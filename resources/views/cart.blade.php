@@ -37,7 +37,7 @@
             <input type="text" name="" id="" placeholder="Coupon Code" />
             <button>Apply Coupon</button>
         </div>
-        <div class="col-lg-5 col-md-5 cart-total">
+        <div class="col-lg-5 col-md-5 cart-total my-5">
             <h4>Cart Total</h4>
             <div class="d-flex"><h6>Subtotal:</h6  > <h6 class="card-total-price"></h6></div>
             <hr />

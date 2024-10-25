@@ -2081,3 +2081,51 @@ footer .d-flex .logos > img {
     font-weight: 700;
     float: right;
 }
+.Sign-In >.container, .Register >.container
+{
+    text-align: center;
+    width: 30%;
+    margin: 5vh auto;
+}
+.Sign-In >.container> h1,
+.Register >.container>h1{
+    font-size: 30px ;
+    color: #8b4513 ;
+    font-weight: 600;
+    letter-spacing: -2px;
+    word-spacing: 5px;
+    border-bottom: 2px solid #8b4513  ;
+    width: 100px;
+    margin:4vh auto;
+}
+.Sign-In >.container input,
+.Register >.container input
+{
+    width: 100%;
+    margin: 1vh 0vw;
+    border: 1px solid #000;
+    padding: 1vh 1vw;
+}
+.Sign-In >.container button,
+.Register >.container button{
+    width: 100%;
+    margin: 1vh 0vw;
+    border: none;
+    background-color: #8b4513 ;
+    padding: 1vh 1vw;
+    color: #fff;
+    font-weight: 700;
+}.Sign-In >.container p,
+.Register >.container p
+{
+    font-size: 12px;
+    text-align: left;
+    margin: 2vh 0vw;
+}
+.Sign-In >.container p a,
+.Register >.container p a{
+    color: #febb2b ; 
+    font-size: 14px;
+    margin: 0vh 0.5vw;
+    font-weight: 600;
+}
