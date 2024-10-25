@@ -15,7 +15,7 @@
                     />
                 </a>
 
-                <button  class="addCart-btn">
+                <button class="addCart-btn">
                     <i class="fa-solid fa-cart-shopping"> </i>
                     Add To Cart
                 </button>
@@ -45,10 +45,10 @@
                         />
                     </a>
 
-                    <button  class="addCart-btn">
-                    <i class="fa-solid fa-cart-shopping"> </i>
-                    Add To Cart
-                </button>
+                    <button class="addCart-btn">
+                        <i class="fa-solid fa-cart-shopping"> </i>
+                        Add To Cart
+                    </button>
                     <div style="position: absolute;">
                         <p class="rounded" style="background: #db4444; color: #fff;">-35%</p>
                         <a href="" class="wishlist-btn"><i class="fa-regular fa-heart"></i> </a>
@@ -62,6 +62,3 @@
     </div>
     @endsection
 </div>
-
-
-

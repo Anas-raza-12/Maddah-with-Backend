@@ -1716,7 +1716,6 @@ nav img {
 }
 .my-Account > .first-container > .row > div > #My-Profile-section .col-lg-6 {
     margin: 1vh 0vw;
-
 }
 .my-Account > .first-container > .row > div > #My-Profile-section label {
     margin: 1vh 0vw;
@@ -1752,120 +1751,60 @@ nav img {
     border: none;
     border-radius: 10px;
 }
-.my-Account>.first-container>.row>div>#My-Profile-section{
+.my-Account > .first-container > .row > div > #My-Profile-section {
     display: none;
 }
-.my-Account>.first-container>.row>div>#address-section{
+.my-Account > .first-container > .row > div > #address-section {
     display: none;
     margin: 5vh auto;
 }
-.my-Account>.first-container>.row>div>#Orders-section{
+.my-Account > .first-container > .row > div > #Orders-section {
     display: none;
 }
 
-.my-Account>.first-container>.row>div>.view-btn-section {
+.my-Account > .first-container > .row > div > .view-btn-section {
     display: none;
 }
-.my-Account>.first-container>.row>div>#address-section button{
+.my-Account > .first-container > .row > div > #address-section button {
     padding: 1vh 1vw;
-    border: none;
+    border: none !important;
     background-color: #febb2b;
     font-weight: 700;
     color: #fff;
     border-radius: 10px;
 }
-.my-Account>.first-container>.row>div>#address-section .for-tab-mobile{
+.my-Account > .first-container > .row > div > #address-section .for-tab-mobile {
     display: none;
 }
-.my-Account>.first-container>.row>div>#address-section h4{
+.my-Account > .first-container > .row > div > #address-section h4 {
     color: #8b4513;
     font-size: 16px;
     margin: 3vh 0vw;
     font-weight: 700;
 }
-.my-Account>.first-container>.row>div>#address-section h6 {
+.my-Account > .first-container > .row > div > #address-section h6 {
     font-size: 20px;
     font-weight: 600;
 }
-.my-Account>.first-container>.row>div>#address-section h6 i{
+.my-Account > .first-container > .row > div > #address-section h6 i {
     color: #8b451359;
     font-size: 15px;
     margin: 0px 10px;
 }
 
-.my-Account > .first-container > .row > div > .view-btn-section h3 {
-    font-size: 16px;
-    color: #8b4513;
-    font-family: Poppins;
-    font-weight: 700;
-    margin-top: 8vh !important;
-}
-
-.my-Account > .first-container > .row > div >  div textarea{
+.my-Account > .first-container > .row > div > div textarea {
     width: 100%;
     border-radius: 15px;
     padding: 1vh 1vw;
     box-shadow: 0px 0px 10px 0px #00000025;
-border: none; margin: 10px 0px;
-margin: 3vh 0vw;
-}
-.my-Account .orders-container {
-    margin: 10px auto;
-    padding: 20px;
-}
-
-.my-Account .orders-table {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px 0px #00000025;
-    width: 100%;
-}
-.my-Account .orders-table th,
-.my-Account .orders-table td {
-    padding: 1vh 0.8vw;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-.my-Account .orders-table th {
-    background-color: #8b4513;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.my-Account .orders-table td {
-    color: #000;
-    font-size: 12px;
-}
-
-.my-Account.status {
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.my-Account .canceled {
-    background-color: #F34031;
-    color: #fff;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-.my-Account .ordered {
-    background-color: #43C710;
-    color: #fff;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-.my-Account .view-btn {
-    background: none;
     border: none;
-    cursor: pointer;
-    font-size: 18px;
+    margin: 10px 0px;
+    margin: 3vh 0vw;
 }
-
+.my-Account > .first-container > .row > div > a{
+    color: #f34031;
+    font-weight: 600;
+}
 /* -----------------------------Footer ----------------------------- */
 
 footer {
@@ -1957,16 +1896,168 @@ footer .d-flex > .d-flex > span {
 footer .d-flex .logos > img {
     width: 300px;
 }
-.links {
-    margin: 2vh auto;
+    .links {
+        margin: 2vh auto;
+    }
+    .links > a {
+        margin: 0vh 1vw;
+        font-weight: 600;
+    }
+    .links > .disable {
+        color: gray;
+    }
+    .links > .Active {
+        color: #000;
+    }
+.orderConfirmation > .first-container {
+    text-align: center;
+    margin: 5vh auto;
 }
-.links > a {
-    margin: 0vh 1vw;
+.orderConfirmation > .first-container > .check-icon {
+    width: 80px;
+    margin: 3vh auto;
+    background-color: #8b4513;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 81px;
+    color: #febb2b;
+}
+.orderConfirmation > .first-container > h1 {
+    font-size: 28px;
+    font-family: Poppins;
+}
+.orderConfirmation h5 {
+    font-size: 15px;
+    color: grey;
+}
+
+.orderConfirmation > .second-container {
+    border: 2px dashed grey;
+    margin: 3vh auto;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.orderConfirmation > .second-container > .row > div {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    justify-content: center;
+}
+
+.orderConfirmation > .second-container p {
+    font-size: 18px;
     font-weight: 600;
+    margin: 0;
 }
-.links > .disable {
-    color: gray;
+.orderConfirmation > .third-container {
+    border: 1px solid #000;
+    padding: 2vh 1vw;
+    border-radius: 10px;
+    width: 50%;
+
+    margin: 3vh auto;
 }
-.links > .Active {
+.orderConfirmation > .third-container h3 {
+    font-size: 20px;
+    margin: 0;
+    color: grey;
+}
+.orderConfirmation > .third-container .d-flex {
+    justify-content: space-between;
+}
+.orderConfirmation > .third-container .d-flex h5 {
+    font-size: 15px;
+    margin: 0;
+}
+.orderConfirmation > .third-container .d-flex p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.orderDetail > .first-container > .row > div > .view-btn-section h3 {
+    font-size: 16px;
+    color: #8b4513;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-top: 8vh !important;
+}
+
+.orderDetail > div textarea {
+    width: 100%;
+    border-radius: 15px;
+    padding: 1vh 1vw;
+    box-shadow: 0px 0px 10px 0px #00000025;
+    border: none;
+    margin: 10px 0px;
+    margin: 3vh 0vw;
+}
+.orderDetail .orders-container {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.orderDetail .orders-table {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #00000025;
+    width: 100%;
+}
+.orderDetail .orders-table th,
+.orderDetail .orders-table td {
+    padding: 1vh 0.8vw;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.orderDetail .orders-table th {
+    background-color: #8b4513;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.orderDetail .orders-table td {
     color: #000;
+    font-size: 12px;
+}
+
+.orderDetail.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.orderDetail .canceled {
+    background-color: #f34031;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.orderDetail .ordered {
+    background-color: #43c710;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.orderDetail .view-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.orderDetail .container > button {
+    border: none;
+    padding: 1vh 1vw;
+    margin: 2vh;
+    border-radius: 10px;
+    background: #f34031;
+    color: #fff;
+    font-weight: 700;
 }

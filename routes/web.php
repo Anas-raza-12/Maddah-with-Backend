@@ -15,6 +15,8 @@ Route::get('/category', [HomeController::class, 'category'])->name('category');
 Route::get('/wishlist', [HomeController::class, 'wishlist'])->name('wishlist');
 Route::get('/checkout', [HomeController::class, 'checkout'])->name('checkout');
 Route::get('/myaccount', [HomeController::class, 'myaccount'])->name('myaccount');
+Route::get('/order-detail', [HomeController::class, 'orderDetail'])->name('order-detail');
+Route::get('/order-confirmation', [HomeController::class, 'orderConfirmation'])->name('order-confirmation');
 Route::get('/404-error', [HomeController::class, 'Error404'])->name('404-error');
 Route::post('/promo-email', [HomeController::class, 'promoEmails'])->name('promoemail');
 

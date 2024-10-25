@@ -12,6 +12,7 @@
             <h3 id="My-Profile" class="section-link">My Profile</h3>
             <h3 id="address" class="section-link">Addresses Book</h3>
             <h3 id="Orders" class="section-link">My Orders</h3>
+            <a href="">Log Out</a>
         </div>
 
         <div class="col-lg-10">
@@ -56,8 +57,8 @@
                 <h4>Shipping Address :</h4>
                 <h6>Anas Raza<i class="fa-solid fa-circle-check"></i></h6>
                 <textarea name="" id="" placeholder="Enter Your full Address" rows="5"></textarea>
-                <button></button>
-                <div class="d-flex gap-3 align-items-center">
+                <button>Submite</button>
+                <div class="d-flex gap-3 align-items-center my-5">
                     <h6 class="m-0">Mobile :</h6>
                     <p class="m-0">1234567890</p>
                 </div>
@@ -76,7 +77,7 @@
                                 <th>Total</th>
                                 <th>Items</th>
                                 <th>Delivered On</th>
-                                <th>Actions</th>
+                                <th>View More</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -87,7 +88,7 @@
                                 <td>$208.12</td>
                                 <td>2</td>
                                 <td>2024-07-07</td>
-                                <td><button class="view-btn">👁</button></td>
+                                <td><a href="" class="view-btn">👁</a></td>
                             </tr>
                             <tr>
                                 <td>10003</td>
@@ -96,7 +97,7 @@
                                 <td>$187.31</td>
                                 <td>2</td>
                                 <td></td>
-                                <td><button class="view-btn">👁</button></td>
+                                <td><a href="" class="view-btn">👁</a></td>
                             </tr>
                             <tr>
                                 <td>10002</td>
@@ -105,72 +106,14 @@
                                 <td>$85.91</td>
                                 <td>1</td>
                                 <td></td>
-                                <td><button class="view-btn">👁</button></td>
+                                <td><a href="" class="view-btn">👁</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <div class="view-btn-section">
-                <h3>Ordered Details</h3>
-
-                <div data-aos="zoom-in" data-aos-duration="1000" class="table-responsive my-1">
-                    <table class="orders-table">
-                        <thead>
-                            <tr>
-                                <th>Order No</th>
-                                <th>Mobile</th>
-                                <th>Pin/Zip Code</th>
-                                <th>Order Date</th>
-                                <th>Delivered Date</th>
-                                <th>Cancelled Date</th>
-                                <th>Order Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>10001</td>
-                                <td>1234567891</td>
-                                <td>804401</td>
-                                <td>2024-07-11 00:54:14</td>
-                                <td>2024-07-07</td>
-                                <td>2024-07-07</td>
-                                <td><span class="status canceled">Canceled</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3>Shipping Address</h3>
-                <textarea data-aos="zoom-in" data-aos-duration="1000" name="" id="" placeholder="Enter your Address" rows="5"></textarea>
-
-                <h3>Transactions</h3>
-                <div data-aos="zoom-in" data-aos-duration="1000" class="table-responsive">
-                    <table class="orders-table">
-                        <thead>
-                            <tr>
-                                <th>Subtotal</th>
-                                <th>Tax</th>
-                                <th>Discount</th>
-                                <th>Total</th>
-                                <th>Payment Mode</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>$172.00</td>
-                                <td>$36.12</td>
-                                <td>$0.00</td>
-                                <td>$208.12</td>
-                                <td>COD</td>
-                                <td><span class="status ordered">Appreved</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>

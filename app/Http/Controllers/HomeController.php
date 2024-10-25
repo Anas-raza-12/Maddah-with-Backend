@@ -55,6 +55,14 @@ class HomeController extends Controller
         return view('myaccount');
     }
 
+    public function orderDetail() {
+        return view('order-detail');
+    }
+
+    public function orderConfirmation() {
+        return view('order-confirmation');
+    }
+
     public function Error404() {
         return view('404-error');
     }

@@ -577,4 +577,15 @@
     color: #fff;
     border-radius: 10px;
 }
+.orderConfirmation >.second-container {
+    width: 80%;
+    padding: 4vh 3vw;
+}
+.orderConfirmation >.second-container .row>div{
+    justify-content: start;
+}
+.orderConfirmation >.third-container{
+    width: 80%;
+    padding: 4vh 3vw;
+}
 }
