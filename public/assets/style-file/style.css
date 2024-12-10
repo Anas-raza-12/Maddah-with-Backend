@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: "Montserrat" !important    ;
 }
 h1,
 h2,
@@ -17,11 +17,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins" !important;
+    font-family: "Montserrat" !important;
 }
 p,
 span {
-    font-family: Poppins;
+    font-family: "Montserrat";
 }
 a {
     text-decoration: none !important;
@@ -54,65 +54,6 @@ a {
     font-size: 17px;
 }
 
-.category-section .row > .col-lg-5 {
-    margin: 0vh auto;
-    width: 49%;
-}
-.category-section .row .first-img {
-    background-image: url("../image/unsplash_Bd7gNnWJBkU.jpg");
-    background-size: cover;
-}
-.category-section .row .second-img {
-    background-image: url("../image/16 1.png");
-    background-size: cover;
-}
-.category-section .row .third-img {
-    background-image: url("../image/30 1.png ");
-    background-size: cover;
-}
-.category-section .row > .row {
-    padding: 0;
-    margin: 0;
-    gap: 2.5vh 2vw;
-}
-.category-section .row .col-lg-12 {
-    padding: 0;
-    height: 200px;
-}
-.category-section .row .position-relative {
-    border-radius: 20px;
-    overflow: hidden;
-}
-.category-section .row .position-relative .position-absolute {
-    bottom: 0;
-    left: 0;
-    padding: 2vh 4vw;
-    border-radius: 0px 20px 0px 0px;
-    background: #fdba2ca6;
-    display: none;
-    transition: opacity 0.2s, transform 0.2s;
-}
-.category-section .row .position-relative:hover .position-absolute {
-    display: block;
-    animation: fadeIn 0.9s ease-in-out;
-    transition: opacity 0.2s, transform 0.2s;
-}
-.category-section .row .position-relative .position-absolute h2 {
-    color: #4d0e0e;
-    font-size: 25px;
-    font-weight: 700;
-    margin: 4vh 0;
-    line-height: 24px;
-}
-
-.category-section .row .position-relative .position-absolute a {
-    color: #000;
-    font-weight: 700;
-    border: 2px solid #000;
-    padding: 1vh 1vw;
-    border-radius: 8px;
-}
-
 .category-section-2 > div {
     margin: 1vh auto;
 }
@@ -126,6 +67,7 @@ a {
     background-position: center center;
     margin: 1vh 0.5vw;
     padding: 0;
+    object-fit: cover;
 }
 .category-section-2 .categories > div {
     background-color: #8b45136c;
@@ -140,22 +82,21 @@ a {
 .category-section-2 .categories > div a {
     color: #fff;
     text-align: center;
+    font-size: 14px !important;
 }
 .category-section-2 .categories > div a h6 {
     margin: 0;
     color: #fff;
-
-    font-family: Montserrat;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .category-section-2 .categories > div a p {
     margin: 0;
     color: #fff;
-    font-family: Montserrat;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
+
 /* -----------------------------navber ----------------------------- */
 .Home .home {
     color: #feba2a !important;
@@ -209,38 +150,32 @@ nav .Right-Side a span {
     justify-content: center;
 }
 .Home > .first-container .d-flex h5 {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     color: #fff;
-
-    font-family: Montserrat;
-    margin: 3vh 0vw;
+    margin: 3vh 0vw 1vw 0vw;
 }
 .Home > .first-container .d-flex h1 {
     color: #8b4513;
-
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 50px;
 }
 .Home > .first-container .d-flex p {
     color: #fff;
-
-    font-family: Montserrat;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     margin: 2vh 0vw;
 }
 .Home > .first-container .d-flex a {
-    border: none;
     background-color: #000;
     color: #fff;
-    padding: 15px 40px;
-    font-weight: 600;
-    margin: 5vh 0vw;
-    gap: 10px;
+    padding: 10px 30px;
+    font-weight: 400;
+    margin: 2vh 0vw;
     border-radius: 5px;
+    font-size: 16px !important;
 }
 
 .Home > .first-container .img {
@@ -266,11 +201,12 @@ nav .Right-Side a span {
     position: relative;
     min-width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 .Home > .first-container .img .slide img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: auto;
 }
 
 @keyframes sliding {
@@ -315,73 +251,90 @@ nav .Right-Side a span {
     margin: 0;
 }
 
+.Home .second-container .row > .col-lg-5 {
+    margin: 0vh auto;
+    width: 49%;
+}
+.Home .second-container .row .first-img {
+    background-image: url("../image/unsplash_Bd7gNnWJBkU.jpg");
+    background-size: cover;
+}
+.Home .second-container .row .second-img {
+    background-image: url("../image/16 1.png");
+    background-size: cover;
+}
+.Home .second-container .row .third-img {
+    background-image: url("../image/30 1.png ");
+    background-size: cover;
+}
+.Home .second-container .row > .row {
+    padding: 0;
+    margin: 0;
+    gap: 2.5vh 2vw;
+}
+.Home .second-container .row .col-lg-12 {
+    padding: 0;
+    height: 200px;
+}
+.Home .second-container .row .position-relative {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Home .second-container .row .position-relative .position-absolute {
+    bottom: 0;
+    left: 0;
+    padding: 2vh 4vw;
+    border-radius: 0px 20px 0px 0px;
+    background: #fdba2ca6;
+    display: none;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.Home .second-container .row .position-relative:hover .position-absolute {
+    display: block;
+    animation: fadeIn 0.9s ease-in-out;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.Home .second-container .row .position-relative .position-absolute h2 {
+    color: #4d0e0e;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 4vh 0;
+    line-height: 24px;
+}
+
+.Home .second-container .row .position-relative .position-absolute a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #000;
+    padding: 1vh 1vw;
+    border-radius: 8px;
+}
+
 .Home > .third-container {
     text-align: center;
     margin: 10vh auto;
 }
 .Home > .third-container > h4 {
     color: #feba2b;
-    font-family: Montserrat;
-    font-size: 20px;
+
+    font-size: 16px;
     font-weight: 600;
-    margin: 2vh auto;
+    margin: 1vh auto;
 }
 .Home > .third-container > h2 {
-    font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 32px;
-
-    margin: 2vh auto;
+    margin: 1vh auto;
 }
 .Home > .third-container > p {
     color: #737373;
-
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
-
-    margin: 2vh auto;
-}
-/* 
-.Home > .third-container > .row > .col-lg-2 {
     margin: 1vh auto;
 }
-.Home > .third-container > .row > .col-lg-2 img {
-    width: 100%;
-    height: 300px;
-}
-.Home > .third-container > .row > .col-lg-2 h4 {
-    color: #feba2b;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 1vh 0vw;
-}
-.Home > .third-container > .row > .col-lg-2 a {
-    color: #737373;
 
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    margin: 0.5vh;
-    padding: 0;
-}
-.Home > .third-container > .row > .col-lg-2 h6 {
-    color: #bdbdbd;
-    margin: 1vh 0vw;
-
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.10000000149011612px;
-    text-align: center;
-}
-.Home > .third-container > .row > .col-lg-2 h6 > span {
-    color: #feba2a;
-}
-    */
 .Home > .third-container > a {
     border: 2px solid #8b4513;
     color: #8b4513;
@@ -389,15 +342,16 @@ nav .Right-Side a span {
     font-weight: 600;
     border-radius: 10px;
     margin: 4vh auto;
-    transition:0.5s;
-
+    transition: 0.5s;
+    font-size: 16px;
 }
-.Home > .third-container > a:hover{
+.Home > .third-container > a:hover {
     border: 2px solid #8b4513;
-    background:#8b4513;
-    color:#fff;
-    transition:0.5s;
+    background: #8b4513;
+    color: #fff;
+    transition: 0.5s;
 }
+
 .Home > .forth-container .row .d-flex {
     align-items: center;
     justify-content: space-between;
@@ -409,7 +363,6 @@ nav .Right-Side a span {
 }
 
 .Home > .forth-container .row h4 {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -418,7 +371,6 @@ nav .Right-Side a span {
 
 .Home > .forth-container .row h1 {
     color: #252b42;
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
@@ -427,10 +379,9 @@ nav .Right-Side a span {
 }
 .Home > .forth-container .row p {
     color: #737373;
-    font-family: Montserrat;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
+    margin: 1vh auto;
 }
 .Home > .fivth-container {
     margin: 5vh auto;
@@ -438,28 +389,22 @@ nav .Right-Side a span {
     padding: 5vh;
 }
 .Home > .fivth-container > h4 {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     color: #febb2a;
 }
 .Home > .fivth-container h2 {
-    font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 32px;
-
-    margin: 2vh auto;
+    margin: 1vh auto;
 }
 .Home > .fivth-container p {
     color: #737373;
-
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
-
-    margin: 2vh auto;
+    margin: 1vh auto;
 }
 .Home > .fivth-container .row {
     margin: 5vh auto;
@@ -469,62 +414,53 @@ nav .Right-Side a span {
     text-align: center;
 }
 .Home > .fivth-container .col-lg-3 img {
-    width: 25%;
+    width: 30%;
 }
 .Home > .fivth-container .col-lg-3 h4 {
-    font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 32px;
-    margin: 5vh auto 2vh auto;
+    margin: 1vh auto;
 }
 .Home > .fivth-container .col-lg-3 p {
     color: #737373;
-
-    font-family: Montserrat;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0.20000000298023224px;
+    margin: 1vh auto;
     text-align: center;
 }
 .Home > .payment-methods {
     margin: 5vh auto !important;
 }
 .Home .payment-methods > h1 {
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
     color: #252b42;
 }
 .Home > .payment-methods > p {
-    font-family: Montserrat;
+    color: #737373;
     font-size: 16px;
-    font-weight: 400;
-
-    color: #737373 !important;
+    font-weight: 500;
+    margin: 1vh auto;
 }
 .Home > .sixth-container {
     text-align: center;
     margin: 5vh auto;
 }
 .Home > .sixth-container > h2 {
-    font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 32px;
+    margin: 1vh auto;
     color: #febb2a;
 }
 
 .Home > .sixth-container > h1 {
-    color: #252b42;
-
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
-    letter-spacing: 0.20000000298023224px;
+    color: #252b42;
     text-align: center;
 }
 .Home > .sixth-container .row > .row .position-relative {
@@ -532,6 +468,7 @@ nav .Right-Side a span {
 }
 .Home .sixth-container .row > .row .position-relative img {
     width: 100%;
+    object-fit: cover;
 }
 .Home .sixth-container .row .sale {
     top: 10px;
@@ -540,7 +477,8 @@ nav .Right-Side a span {
     padding: 0.5vh 1vw;
     border-radius: 10px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 16px;
 }
 .Home .sixth-container .row .icon {
     bottom: 10px;
@@ -565,7 +503,6 @@ nav .Right-Side a span {
 .Home .sixth-container .row .col-lg-8 .d-flex a {
     color: #feba2a;
 
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 700;
 }
@@ -590,16 +527,14 @@ nav .Right-Side a span {
     color: white;
 }
 .Home .sixth-container .row .col-lg-8 h4 {
-    font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
     margin: 2vh 0vw;
     text-align: left;
 }
 .Home .sixth-container .row .col-lg-8 p {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -1px;
     color: #737373;
 }
 .Home .sixth-container .row .col-lg-8 .sale {
@@ -612,7 +547,6 @@ nav .Right-Side a span {
     color: #737373;
 }
 .Home .sixth-container .row .col-lg-8 .sale p {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     color: #737373;
@@ -621,7 +555,7 @@ nav .Right-Side a span {
 }
 .Home .sixth-container .row .col-lg-8 h6 {
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #737373;
 }
@@ -649,6 +583,7 @@ nav .Right-Side a span {
     border-radius: 50px;
     padding: 1vh 1vw;
     font-weight: 700;
+    font-size: 16px;
 }
 
 /* ----------------------------- Shop ----------------------------- */
@@ -661,8 +596,7 @@ nav .Right-Side a span {
 }
 .Shop > .first-container .d-flex h1 {
     margin: 0;
-    font-family: Montserrat;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 700;
     color: #252b42;
 }
@@ -672,13 +606,13 @@ nav .Right-Side a span {
 }
 
 .Shop > .first-container .d-flex .d-flex a {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
-
     color: #252b42;
 }
 .Shop > .first-container a {
+    font-size: 14px;
+
     color: #8b4513;
     font-weight: 700;
     border-radius: 10px;
@@ -694,26 +628,24 @@ nav .Right-Side a span {
     margin: 8vh auto;
 }
 
-.Shop > .second-container > h5 {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    color: #feba2b;
-    margin: 0 0 0 0;
-}
-.Shop > .second-container > h3 {
-    font-family: Montserrat;
-    font-size: 24px;
+.Shop > .second-container > h4 {
+    font-size: 16px;
     font-weight: 700;
-    margin: 2vh auto;
+    line-height: 24px;
+    color: #febb2a;
+}
+.Shop > .second-container > h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 1vh auto;
     color: #252b42;
 }
 .Shop > .second-container > p {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
     color: #737373;
-    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 1vh auto;
 }
 .Shop > .second-container > .row > .col-lg-2 {
     margin: 2vh auto;
@@ -722,24 +654,19 @@ nav .Right-Side a span {
     width: 100%;
 }
 .Shop > .second-container > .row > .col-lg-2 h4 {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     margin: 1vh auto;
     color: #febb2a;
 }
 .Shop > .second-container > .row > .col-lg-2 a {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
     text-align: center;
-    
 }
 .Shop > .second-container > .row > .col-lg-2 h6 {
-    font-family: Montserrat;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     margin: 1vh;
     text-align: center;
@@ -750,9 +677,8 @@ nav .Right-Side a span {
     color: #feba2b;
 }
 .Shop > .second-container button {
-    font-family: Montserrat;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     background-color: transparent;
     color: #8b4513;
     border: 1px solid #8b4513;
@@ -761,6 +687,7 @@ nav .Right-Side a span {
 }
 .Shop > .container-fluid > img {
     width: 100%;
+    object-fit: cover;
 }
 
 /* -----------------------------About Page ----------------------------- */
@@ -770,28 +697,33 @@ nav .Right-Side a span {
 .About > .first-container > .row > .col-lg-6 {
     align-items: center;
     justify-content: center;
+    
 }
-.About > .first-container > .row > .col-lg-6 h5 {
-    font-size: 22px;
+.About > .first-container > .row > .col-lg-6 h4 {
+    font-size: 16px;
     font-weight: 700;
-    color: #ffc107;
-    font-family: Montserrat;
-    margin: 1vh 0vw;
+    line-height: 24px;
+    color: #febb2a;
+    text-align:left;
+
 }
 .About > .first-container > .row > .col-lg-6 h1 {
     color: #8b4513;
-
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 60px;
-    margin: 5vh 0vw;
+    margin: 2vh 0vw;
+    text-align:left;
+
 }
 .About > .first-container > .row > .col-lg-6 p {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    margin: 4vh 0vw;
+    
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 3vh auto;
+    text-align:left;
+
 }
 .About > .first-container > .row > .col-lg-6 a {
     border: none;
@@ -804,7 +736,7 @@ nav .Right-Side a span {
     border-radius: 5px;
 }
 .About > .first-container > .row > .col-lg-6 > img {
-    width: 100%;
+    width: 80%;
 }
 .About > .second-container {
     margin: 100px auto;
@@ -814,28 +746,27 @@ nav .Right-Side a span {
     align-items: center;
 }
 .About > .second-container > .row > .col-lg-6 h5 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     color: #8b4513;
-    font-family: Montserrat;
     margin: 2vh 0vw;
 }
 .About > .second-container > .row > .col-lg-6 h4 {
-    font-family: Montserrat;
-    font-size: 24px;
+
+    font-size: 20px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0.10000000149011612px;
     text-align: left;
 }
 .About > .second-container > .row > .col-lg-6 p {
-    font-family: Montserrat;
+    color: #737373;
     font-size: 16px;
-    font-weight: 400;
-    margin: 0;
+    font-weight: 500;
+    margin: 0vh auto;
 }
 .About > .third-container {
-    margin: 150px auto;
+    margin: 100px auto;
 }
 .About > .third-container > .row > .col-lg-3 {
     justify-content: center;
@@ -844,10 +775,9 @@ nav .Right-Side a span {
     text-align: center;
 }
 .About > .third-container > .row > .col-lg-3 h2 {
-    font-family: Montserrat;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 80px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
     color: #8b4513;
     margin: 0;
 }
@@ -861,36 +791,36 @@ nav .Right-Side a span {
     content: "+";
 }
 .About > .third-container > .row > .col-lg-3 h6 {
-    font-family: Montserrat;
+
     font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
+    font-weight: 500;
+    line-height: 20px;
     letter-spacing: 0.10000000149011612px;
     text-align: center;
     color: #feba2a;
 }
 .About > .forth-container {
-    margin: 60px auto;
+    margin: 50px auto;
 }
 .About > .forth-container video {
     border-radius: 20px;
+    object-fit:cover;
 }
 
 .About > .fivth-container {
-    margin: 150px auto;
+    margin: 100px auto;
 }
 .About > .fivth-container h1 {
-    font-family: Montserrat;
     font-size: 50px;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     color: #252b42;
 }
 .About > .fivth-container p {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-
     color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0vh auto;
+   
 }
 .About > .fivth-container .col-lg-2 {
     margin: 100px auto;
@@ -898,15 +828,16 @@ nav .Right-Side a span {
 
 .About > .fivth-container .col-lg-2 img {
     width: 100%;
+    object-fit: cover;
 }
 .About > .fivth-container .col-lg-2 h4 {
-    font-family: Montserrat;
+   
     font-size: 20px;
     font-weight: 800;
     margin: 2vh auto;
 }
 .About > .fivth-container .col-lg-2 p {
-    font-family: Montserrat;
+
     font-size: 16px;
     font-weight: 700;
     margin: 2vh;
@@ -925,16 +856,17 @@ nav .Right-Side a span {
     margin: 100px auto;
 }
 .About > .sixth-container h1 {
-    font-family: Montserrat;
-    font-size: 50px;
-    font-weight: 800;
+    
+    font-size: 40px;
+    font-weight: 700;
     color: #252b42;
     margin: 20px auto;
 }
 .About > .sixth-container p {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
+
+    font-size: 16px;
+    font-weight: 500;
+    margin: 2vh;
     color: #737373;
 }
 
@@ -946,23 +878,23 @@ nav .Right-Side a span {
     margin: 70px 0vw !important;
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > h6 {
-    font-family: Poppins;
+  
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     color: #8b4513;
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > h1 {
-    font-family: Montserrat;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
     margin: 3vh 0vw;
     color: #fff;
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > p {
-    font-family: Montserrat;
-    font-size: 18px;
+    
+    font-size: 16px;
     font-weight: 500;
-    color: #fff;
+    margin: 2vh;
+    color:#ffffff;
     margin: 30px 0px;
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > a {
@@ -971,6 +903,8 @@ nav .Right-Side a span {
     padding: 1.2vh 1.5vw;
     margin: 30px 0vw !important ;
     border-radius: 5px;
+    font-size: 16px;
+
 }
 .About > .seventh-container > .container > .row > .col-lg-6 {
     justify-content: center;
@@ -993,36 +927,34 @@ nav .Right-Side a span {
     align-items: center;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h5 {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 700;
-    color: #ffc107;
-    font-family: Montserrat;
-    margin: 1vh 0vw;
+    line-height: 24px;
+    color: #febb2a;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h1 {
     color: #8b4513;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 600;
     line-height: 70px;
     margin: 2vh 0vw;
     letter-spacing: -4px;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > p {
-    font-family: Montserrat;
-    font-size: 18px;
+    color: #737373;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
-    margin: 3vh 0vw;
+    margin: 1vh auto;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h4 {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
+
+    font-size: 20px;
+    font-weight: 600;
     line-height: 32px;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h4 > a {
     color: #8b4513;
-    font-size: 22px;
+    font-size: 20px;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > .d-flex {
     width: 300px;
@@ -1036,19 +968,18 @@ nav .Right-Side a span {
     margin: 100px auto;
 }
 .Contact > .second-container > h5 {
-    font-family: Poppins;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0.20000000298023224px;
-    text-align: center;
-    color: #f2bb2a;
+    color: #febb2a;
+    
 }
 .Contact > .second-container > h1 {
-    font-family: Montserrat;
-    font-size: 40px;
+
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: -2px;
+    line-height: 32px;
+    margin: 1vh auto;
     color: #252b42;
 }
 .Contact > .second-container > .row > .col-lg-3 {
@@ -1060,7 +991,7 @@ nav .Right-Side a span {
 }
 
 .Contact > .second-container > .row > .col-lg-3 > div > i {
-    font-size: 60px;
+    font-size: 50px;
     color: #f2bb2a;
     margin: 2vh auto;
 }
@@ -1068,7 +999,7 @@ nav .Right-Side a span {
     color: #8b4513;
 }
 .Contact > .second-container > .row > .col-lg-3 > div > h5 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 3vh auto;
 }
 .Contact > .second-container > .row > .col-lg-3 > div > a {
@@ -1185,13 +1116,12 @@ nav .Right-Side a span {
 }
 .Product-details > .first-container > .row > .product-slider img {
     height: 500px;
-    
 }
 
 .Product-details > .first-container > .row > .col-lg-7 {
     display: flex;
     /* align-items: center; */
-    padding:1vh 2vw;
+    padding: 1vh 2vw;
 }
 .Product-details > .first-container > .row > .col-lg-7 #reviews {
     margin: 2vh 0vw;
@@ -1216,11 +1146,11 @@ nav .Right-Side a span {
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
-color: #F8BA2C;
+    color: #f8ba2c;
     margin: 3vh 0vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 h1 s{
-    color:gray;
+.Product-details > .first-container > .row > .col-lg-7 h1 s {
+    color: gray;
 }
 .Product-details > .first-container > .row > .col-lg-7 h6 {
     font-family: Montserrat;
@@ -1256,15 +1186,28 @@ color: #F8BA2C;
 .Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex {
     gap: 1vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex > span {
+.Product-details
+    > .first-container
+    > .row
+    > .col-lg-7
+    .buy-now
+    > .d-flex
+    > span {
     border: 1px solid #e8e8e8;
     border-radius: 50%;
     padding: 0.7vh 0.5vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex > span a {
+.Product-details
+    > .first-container
+    > .row
+    > .col-lg-7
+    .buy-now
+    > .d-flex
+    > span
+    a {
     color: #000;
 }
-.Product-details > .first-container > .row > .col-lg-7 .buy-now  button {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now button {
     border: none;
     background: #feba2b;
     padding: 1vh 1vw;
@@ -1272,27 +1215,25 @@ color: #F8BA2C;
     font-weight: 700;
     border-radius: 5px;
 }
-.Product-details > .first-container > .row > .col-lg-7 .buy-now  form a{
+.Product-details > .first-container > .row > .col-lg-7 .buy-now form a {
     border: none;
     background: #feba2b;
     padding: 1vh 1vw;
     color: white;
     font-weight: 700;
     border-radius: 5px;
-
 }
-.Product-details > .first-container > .row > .col-lg-7 .buy-now>a{
+.Product-details > .first-container > .row > .col-lg-7 .buy-now > a {
     /* background: #feba2b;
    
     color:#fff;
    
     margin:0vh 1vw; */
     padding: 10px 14px;
-    border-radius:50%;
+    border-radius: 50%;
     color: #000;
     margin: 0vh 1vw;
     border: 1px solid gray;
-
 }
 .Product-details > .first-container > .row > .col-lg-7 h4 {
     font-family: Poppins;
@@ -1304,7 +1245,6 @@ color: #F8BA2C;
     font-size: 17px !important;
     font-weight: 500 !important;
     color: #858585 !important;
-
 }
 
 .Product-details > .third-container {
@@ -1325,7 +1265,7 @@ color: #F8BA2C;
 }
 .Product-details > .third-container > .row > .col-lg-2 img {
     width: 100% !important;
-    height:250px; 
+    height: 250px;
 }
 .Product-details > .third-container > .row > .col-lg-2 h5 {
     font-family: Montserrat;
@@ -1337,8 +1277,8 @@ color: #F8BA2C;
 }
 .Product-details > .third-container > .row > .col-lg-2 {
     margin: 1vh auto;
-    border-radius:10px;
-    overflow :hidden;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .Product-details > .third-container > .row > .col-lg-2 a {
     font-family: Montserrat;
@@ -1365,51 +1305,48 @@ color: #F8BA2C;
 }
 
 .Product-details > .third-container > .row > .col-lg-2 form {
-    position:absolute;
-    top:220px;
-    width:89%;
+    position: absolute;
+    top: 220px;
+    width: 89%;
 }
-.Product-details > .third-container > .row > .col-lg-2 form button{
-    background-color: #8B4513;
-    color:#fff;
-    width:100%;
-    padding:1vh 1vw;
-    border:none;
+.Product-details > .third-container > .row > .col-lg-2 form button {
+    background-color: #8b4513;
+    color: #fff;
+    width: 100%;
+    padding: 1vh 1vw;
+    border: none;
     font-family: Montserrat !important;
-
 }
-.Product-details > .third-container > .row > .col-lg-2 form a{
-    background-color: #8B4513;
-    color:#fff;
-    width:100% !important;
-    padding:1.5vh 53px;
-    border:none;
+.Product-details > .third-container > .row > .col-lg-2 form a {
+    background-color: #8b4513;
+    color: #fff;
+    width: 100% !important;
+    padding: 1.5vh 53px;
+    border: none;
     font-size: 15px;
     font-family: Montserrat !important;
-
-   
 }
-.Product-details > .third-container > .row > .col-lg-2 .wishlist-btn{
+.Product-details > .third-container > .row > .col-lg-2 .wishlist-btn {
     /* border:1px solid #fff !important; */
-    background:#fff;
-    padding:6px 7px;
-    color:#000;
-    border-radius:50%;
+    background: #fff;
+    padding: 6px 7px;
+    color: #000;
+    border-radius: 50%;
 }
-.Product-details > .third-container > .row > .col-lg-2 .rounded{
-    font-size:12px;
-    padding:2px 5px;
+.Product-details > .third-container > .row > .col-lg-2 .rounded {
+    font-size: 12px;
+    padding: 2px 5px;
 }
 .Product-details > .third-container > .row > .col-lg-2 .rating {
-    color: #F8BA2C;
+    color: #f8ba2c;
     text-align: center;
-    font-size:12px;
+    font-size: 12px;
 }
-.Product-details > .third-container > .row > .col-lg-2 .rating span{
-    color:#00000079;
-font-family:Poppins;
-font-size:14px;
-font-weight: 600;
+.Product-details > .third-container > .row > .col-lg-2 .rating span {
+    color: #00000079;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
 }
 .thumbnail {
     cursor: pointer;
@@ -1502,14 +1439,13 @@ font-weight: 600;
     padding: 1vh 1vw;
     border-radius: 5px;
     font-weight: 600;
-    transition:0.5s;
+    transition: 0.5s;
 }
-.wishlist > a:hover{
+.wishlist > a:hover {
     color: #fff;
-    background-color: #8B4513; 
-    border: 2px solid #8B4513;
-    transition:0.5s;
-
+    background-color: #8b4513;
+    border: 2px solid #8b4513;
+    transition: 0.5s;
 }
 .wishlist .wishlist-row > div {
     border-radius: 10px;
@@ -1561,7 +1497,7 @@ font-weight: 600;
     border-radius: 50%;
     color: #000;
 }
- .added {
+.added {
     background-color: #f8ba2c !important    ;
     color: #fff !important;
     border: 1px solid #f8ba2c !important ;
@@ -1781,7 +1717,13 @@ font-weight: 600;
 .checkOut > .first-container > .row > .payment-card .payment-section > div {
     width: 100%;
 }
-.checkOut > .first-container > .row > .payment-card .payment-section > div > div {
+.checkOut
+    > .first-container
+    > .row
+    > .payment-card
+    .payment-section
+    > div
+    > div {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
@@ -1892,7 +1834,13 @@ font-weight: 600;
     font-family: Poppins !important;
     font-size: 17px;
 }
-.my-Account > .first-container > .row > div > #My-Profile-section .col-lg-6 input {
+.my-Account
+    > .first-container
+    > .row
+    > div
+    > #My-Profile-section
+    .col-lg-6
+    input {
     width: 95%;
     padding: 1vh 0.5vw;
     box-shadow: 0px 0px 10px 0px #0000000e;
@@ -1901,7 +1849,13 @@ font-weight: 600;
     margin: autor;
 }
 
-.my-Account > .first-container > .row > div > #My-Profile-section .col-lg-12 input {
+.my-Account
+    > .first-container
+    > .row
+    > div
+    > #My-Profile-section
+    .col-lg-12
+    input {
     width: 100%;
     padding: 1vh 0.5vw;
     margin: 1vh 0%;
@@ -2360,9 +2314,9 @@ footer .d-flex .logos > img {
     display: flex;
     display: flex;
     align-items: center;
-    padding:3vh 1vw;
+    padding: 3vh 1vw;
     justify-content: space-between;
-    border-bottom: 2px solid #8B4513;
+    border-bottom: 2px solid #8b4513;
 }
 .bank-details > .first-container > div h3 {
     margin: 0;
@@ -2378,44 +2332,42 @@ footer .d-flex .logos > img {
     box-shadow: 0px 0px 10px 0px #00000017;
     border-radius: 10px;
 }
-.bank-details >.second-container h5{
-    margin:0;
-    margin-top:2vh;
-    font-weight:600;
-    
+.bank-details > .second-container h5 {
+    margin: 0;
+    margin-top: 2vh;
+    font-weight: 600;
 }
-.bank-details >.second-container p{
-    margin:0;
+.bank-details > .second-container p {
+    margin: 0;
 }
-.bank-details >.third-container {
-    margin:4vh auto;
-} 
+.bank-details > .third-container {
+    margin: 4vh auto;
+}
 
-
-.bank-details >.third-container form >div {
+.bank-details > .third-container form > div {
     display: flex;
     justify-content: flex-start;
-    gap:1vw;
+    gap: 1vw;
     align-items: center;
-
-    
 }
-.bank-details > .third-container form > div input[type="file"]::file-selector-button {
-    border: 2px solid #F8BA2C;
+.bank-details
+    > .third-container
+    form
+    > div
+    input[type="file"]::file-selector-button {
+    border: 2px solid #f8ba2c;
     background: transparent;
-    border-radius:5px;
-    color:#F8BA2C;
-    padding:0.5vh 1vw;
-
+    border-radius: 5px;
+    color: #f8ba2c;
+    padding: 0.5vh 1vw;
 }
-.bank-details > .third-container form > div button{
-    background:#F8BA2C;
-    border:none;
-    color:#ffffff;
-    padding:1vh 2vw;
-    border-radius:5px
-
+.bank-details > .third-container form > div button {
+    background: #f8ba2c;
+    border: none;
+    color: #ffffff;
+    padding: 1vh 2vw;
+    border-radius: 5px;
 }
-.bank-details >.third-container form  img{
-    width:100px;
+.bank-details > .third-container form img {
+    width: 100px;
 }

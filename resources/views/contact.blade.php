@@ -19,7 +19,7 @@
                   </div>
             </div>
             <div data-aos="fade-left"  data-aos-duration="1000" class="col-lg-6 d-flex justify-content-end">
-                  <img src="{{ asset('assets/image/hero-cover-2.png') }}" alt="" />
+                  <img src="{{ asset('assets/image/hero-cover-2.webp') }}" alt="" />
             </div>
       </div>
 </div>

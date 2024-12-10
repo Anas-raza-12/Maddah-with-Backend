@@ -19,22 +19,22 @@
                   <a href="{{ route('shop') }}">SHOP NOW</a>
               </div>
           </div>
-          <div data-aos-duration="1000" data-aos="fade-left" class="col-lg-6 col-md-6 img d-flex position-relative">
+          <div data-aos-duration="1000" data-aos="zoom-in" class="col-lg-6 col-md-6 img d-flex position-relative">
               <section class="slider">
                   <div class="slide one">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/hero-cover-1.webp') }}" alt="" />
                   </div>
                   <div class="slide two">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/hero-cover-1.webp') }}" alt="" />
                   </div>
                   <div class="slide three">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/hero-cover-1.webp') }}" alt="" />
                   </div>
                   <div class="slide four">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/hero-cover-1.webp') }}" alt="" />
                   </div>
                   <div class="slide four">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/hero-cover-1.webp') }}" alt="" />
                   </div>
               </section>
 
@@ -99,10 +99,11 @@
                 
                 <form class="addCart-btn" id="addToCartForm">
                     @if (array_key_exists($product->id, $cart))
-                        <a href="{{ route('cart.view') }}" class="addToCart"><i class="fa-regular fa-eye"></i> View Cart</a>
+                        <a href="{{ route('cart.view') }}" class="addToCart">
+                        <i class="fa-regular fa-eye"></i> View Cart</a>
                     @else
                         <button type="button" id="addToCart" class="addToCart" data-id="{{ $product->id }}" data-name="{{ $product->title }}" data-price="@if ($product->sale_price) {{$product->sale_price}} @else {{$product->regular_price}} @endif" data-regular-price="{{ $product->regular_price }}" data-sale-price="{{ $product->sale_price }}" data-image="{{ $product->featured_image }}">
-                            <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+                        <i class="fa-thin fa-cart-shopping"></i> Add To Cart
                         </button>
                     @endif
                 </form>
@@ -197,7 +198,7 @@
 <div class="payment-methods container text-center">
 <h1>Easy Payment Methods</h1>
 <p>Lorem ipsum dolor sit amet consectetur. Mattis vitae vitae est venenatis egestas <br> pharetra. Morbi sit tellus elementum elementum tincidunt morbi id. </p>
-<img width="100%" src="{{ asset('assets/image/row.png') }}" alt="">
+<img width="100%" src="{{ asset('assets/image/row.webp') }}" alt="">
 
 </div>
 <div class="sixth-container container">

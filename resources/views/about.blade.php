@@ -7,7 +7,7 @@
         <div data-aos="fade-right"  data-aos-duration="1000" class="col-lg-6 col-md-6 d-flex">
             <div>
                 <div>
-                    <h5>ABOUT COMPANY</h5>
+                    <h4>ABOUT COMPANY</h4>
                     <h1>ABOUT US</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Mattis vitae vitae est venenatis egestas pharetra. Morbi sit tellus elementum elementum tincidunt morbi id.
@@ -16,8 +16,8 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-left"  data-aos-duration="1000" class="col-lg-6 col-md-6 d-flex">
-            <img src="{{ asset('assets/image/hero-cover-2.png') }}" alt="" />
+        <div data-aos="fade-left"  data-aos-duration="1000" class="col-lg-6 col-md-6 d-flex text-center">
+            <img src="{{ asset('assets/image/hero-cover-2.webp') }}" alt="" />
         </div>
     </div>
 </div>
@@ -26,8 +26,8 @@
         <div class="col-lg-6 col-md-6">
             <h5>Problems trying</h5>
             <h4>
-                Met minim Mollie non desert <br />
-                Alamo est sit cliquey dolor do <br />
+                Met minim Mollie non desert 
+                Alamo est sit <br /> cliquey dolor do 
                 met sent.
             </h4>
         </div>
@@ -67,13 +67,17 @@
     </div>
 </div>
 <div class="forth-container container d-flex justify-content-center position-relative">
-    <video controls src="{{ asset('assets/image/WhatsApp Video 2024-09-16 at 14.58.29_5ecfe558.mp4') }}"></video>
+<video autoplay muted loop>
+    <source src="{{ asset('assets/image/WhatsApp Video 2024-09-16 at 14.58.29_5ecfe558.mp4') }}" type="video/mp4">
+   
+</video>
+
 </div>
 <div class="sixth-container container text-center">
     <h1>Easy Payment Methods</h1>
     <p>Lorem ipsum dolor sit amet consectetur. Mattis vitae vitae est venenatis egestas <br> pharetra. Morbi sit tellus elementum elementum tincidunt morbi id.
     </p>
-    <img src="{{ asset('assets/image/row.png') }}" alt="" />
+    <img src="{{ asset('assets/image/row.webp') }}" alt="" />
 </div>
 <div class="seventh-container container-fluid p-0 m-0">
     <div class="container">
