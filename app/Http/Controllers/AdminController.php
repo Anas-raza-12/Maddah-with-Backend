@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
+use App\Models\Order;
 use App\Models\OurTeam;
 use App\Models\Product;
 use App\Models\Category;
@@ -251,85 +252,99 @@ class AdminController extends Controller
         return redirect()->route('dashboard.categories.list')->with('delete', 'Your category has been deleted');
     }
 
-    public function ourTeam() {
-        $teams = OurTeam::orderBy('created_at', 'DESC')->paginate(10);
-        return view('admin.our-team', compact('teams'));
-    }
+    // public function ourTeam() {
+    //     $teams = OurTeam::orderBy('created_at', 'DESC')->paginate(10);
+    //     return view('admin.our-team', compact('teams'));
+    // }
 
-    public function addMember() {
-        return view('admin.add-member');
-    }
+    // public function addMember() {
+    //     return view('admin.add-member');
+    // }
 
-    public function storeMember(Request $request) {
-        $request->validate([
-            'name' => 'required',
-            'profession' => 'required',
-            'image' => 'required | image | mimes:png,jpg,jpeg | max:4048',
-            'facebook' => 'nullable|url',
-            'instagram' => 'nullable|url',
-            'twitter' => 'nullable|url',
-        ]);
-        $member = new OurTeam();
-        $member->name = $request->name;
-        $member->profession = $request->profession;
-        $member->facebook = $request->facebook;
-        $member->instagram = $request->instagram;
-        $member->twitter = $request->twitter;
-        $image = $request->file('image');
-        $imageName = time() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('uploads/members'), $imageName);
-        $member->image = $imageName;
-        $member->save();
-        return redirect()->route('dashboard.ourteam.list')->with('success', 'Member has been added successfully');
-    }
+    // public function storeMember(Request $request) {
+    //     $request->validate([
+    //         'name' => 'required',
+    //         'profession' => 'required',
+    //         'image' => 'required | image | mimes:png,jpg,jpeg | max:4048',
+    //         'facebook' => 'nullable|url',
+    //         'instagram' => 'nullable|url',
+    //         'twitter' => 'nullable|url',
+    //     ]);
+    //     $member = new OurTeam();
+    //     $member->name = $request->name;
+    //     $member->profession = $request->profession;
+    //     $member->facebook = $request->facebook;
+    //     $member->instagram = $request->instagram;
+    //     $member->twitter = $request->twitter;
+    //     $image = $request->file('image');
+    //     $imageName = time() . '.' . $image->getClientOriginalExtension();
+    //     $image->move(public_path('uploads/members'), $imageName);
+    //     $member->image = $imageName;
+    //     $member->save();
+    //     return redirect()->route('dashboard.ourteam.list')->with('success', 'Member has been added successfully');
+    // }
 
-    public function editMember(String $id) {
-        $member = OurTeam::findOrFail($id);
-        return view('admin.edit-member', compact('member'));
-    }
+    // public function editMember(String $id) {
+    //     $member = OurTeam::findOrFail($id);
+    //     return view('admin.edit-member', compact('member'));
+    // }
 
-    public function updateMember(Request $request, String $id) {
-        $request->validate([
-            'name' => 'required',
-            'profession' => 'required',
-            'image' => 'image | mimes:png,jpg,jpeg | max:4048',
-            'facebook' => 'nullable|url',
-            'instagram' => 'nullable|url',
-            'twitter' => 'nullable|url',
-        ]);
-        $member = OurTeam::findOrFail($id);
-        $member->name = $request->name;
-        $member->profession = $request->profession;
-        $member->facebook = $request->facebook;
-        $member->instagram = $request->instagram;
-        $member->twitter = $request->twitter;
-        if ($request->hasFile('image')) {
-            // Check if old image exists and delete it
-            if (!empty($member->image) && File::exists(public_path('uploads/members/' . $member->image))) {
-                File::delete(public_path('uploads/members/' . $member->image));
-            }
+    // public function updateMember(Request $request, String $id) {
+    //     $request->validate([
+    //         'name' => 'required',
+    //         'profession' => 'required',
+    //         'image' => 'image | mimes:png,jpg,jpeg | max:4048',
+    //         'facebook' => 'nullable|url',
+    //         'instagram' => 'nullable|url',
+    //         'twitter' => 'nullable|url',
+    //     ]);
+    //     $member = OurTeam::findOrFail($id);
+    //     $member->name = $request->name;
+    //     $member->profession = $request->profession;
+    //     $member->facebook = $request->facebook;
+    //     $member->instagram = $request->instagram;
+    //     $member->twitter = $request->twitter;
+    //     if ($request->hasFile('image')) {
+    //         // Check if old image exists and delete it
+    //         if (!empty($member->image) && File::exists(public_path('uploads/members/' . $member->image))) {
+    //             File::delete(public_path('uploads/members/' . $member->image));
+    //         }
         
-            // Handle new image upload
-            $image = $request->file('image');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
+    //         // Handle new image upload
+    //         $image = $request->file('image');
+    //         $imageName = time() . '.' . $image->getClientOriginalExtension();
             
-            // Store the new image
-            $image->move(public_path('uploads/members'), $imageName);
+    //         // Store the new image
+    //         $image->move(public_path('uploads/members'), $imageName);
             
-            // Update the category's image field
-            $member->image = $imageName;
-        } 
-        $member->save();
-        return redirect()->route('dashboard.ourteam.list')->with('edit', 'Member has been edit successfully');
+    //         // Update the category's image field
+    //         $member->image = $imageName;
+    //     } 
+    //     $member->save();
+    //     return redirect()->route('dashboard.ourteam.list')->with('edit', 'Member has been edit successfully');
+    // }
+
+    // public function deleteMember(String $id) {
+    //     $member = OurTeam::findOrFail($id);
+    //     if (!empty($member->image) && File::exists(public_path('uploads/members/' . $member->image))) {
+    //         File::delete(public_path('uploads/members/' . $member->image));
+    //     }
+    //     $member->delete();
+    //     return redirect()->route('dashboard.ourteam.list')->with('delete', 'Member has been deleted successfully');
+    // }
+
+    public function orders()
+    {
+
+        $orders = Order::with('transaction')->orderBy('created_at', 'DESC')->paginate(10);
+
+        return view('admin.orders', compact('orders'));
     }
 
-    public function deleteMember(String $id) {
-        $member = OurTeam::findOrFail($id);
-        if (!empty($member->image) && File::exists(public_path('uploads/members/' . $member->image))) {
-            File::delete(public_path('uploads/members/' . $member->image));
-        }
-        $member->delete();
-        return redirect()->route('dashboard.ourteam.list')->with('delete', 'Member has been deleted successfully');
+    public function orderDetails($orderId)
+    {
+        $order = Order::with(['transaction', 'user', 'items.product'])->findOrFail($orderId);
+        return view('admin.order-details', compact('order'));
     }
 
     public function promoEmails() {

@@ -9,15 +9,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
     font-family: "Poppins" !important;
+}
+p,
+span {
+    font-family: Poppins;
 }
 a {
     text-decoration: none !important;
@@ -157,7 +161,7 @@ a {
     color: #feba2a !important;
     font-weight: 700;
 }
-.About .About {
+.About .about {
     color: #feba2a !important;
     font-weight: 700;
 }
@@ -165,10 +169,7 @@ a {
     color: #feba2a !important;
     font-weight: 700;
 }
-.Blog .Blog {
-    color: #feba2a !important;
-    font-weight: 700;
-}
+
 .Contact .Contact {
     color: #feba2a !important;
     font-weight: 700;
@@ -218,7 +219,7 @@ nav .Right-Side a span {
 .Home > .first-container .d-flex h1 {
     color: #8b4513;
 
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 60px;
 }
@@ -342,6 +343,7 @@ nav .Right-Side a span {
 
     margin: 2vh auto;
 }
+/* 
 .Home > .third-container > .row > .col-lg-2 {
     margin: 1vh auto;
 }
@@ -379,14 +381,23 @@ nav .Right-Side a span {
 .Home > .third-container > .row > .col-lg-2 h6 > span {
     color: #feba2a;
 }
+    */
 .Home > .third-container > a {
     border: 2px solid #8b4513;
     color: #8b4513;
     padding: 1vh 1vw;
     font-weight: 600;
     border-radius: 10px;
-}
+    margin: 4vh auto;
+    transition:0.5s;
 
+}
+.Home > .third-container > a:hover{
+    border: 2px solid #8b4513;
+    background:#8b4513;
+    color:#fff;
+    transition:0.5s;
+}
 .Home > .forth-container .row .d-flex {
     align-items: center;
     justify-content: space-between;
@@ -549,18 +560,18 @@ nav .Right-Side a span {
 .Home .sixth-container .row .col-lg-8 > div > .d-flex {
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 200px !important;
 }
 .Home .sixth-container .row .col-lg-8 .d-flex a {
     color: #feba2a;
 
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
 }
 .Home .sixth-container .row .col-lg-8 .d-flex span {
-    background: #252b42;
-    gap: 1vh;
+    background: #8b4513;
+    gap: 0.5vh;
     align-items: center;
     padding: 0.5vh 0.5vw;
     border-radius: 30px;
@@ -582,13 +593,14 @@ nav .Right-Side a span {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
-
+    margin: 2vh 0vw;
     text-align: left;
 }
 .Home .sixth-container .row .col-lg-8 p {
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
+    color: #737373;
 }
 .Home .sixth-container .row .col-lg-8 .sale {
     background: transparent;
@@ -601,7 +613,7 @@ nav .Right-Side a span {
 }
 .Home .sixth-container .row .col-lg-8 .sale p {
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #737373;
     margin: 0;
@@ -611,10 +623,11 @@ nav .Right-Side a span {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 700;
+    color: #737373;
 }
 .Home .sixth-container .row .col-lg-8 h6 span {
     color: #feba2a;
-    margin: 0vh 1vw;
+    margin: 0vh 0.5vw;
 }
 .Home .sixth-container .row .col-lg-8 .item-color {
     width: 120px !important;
@@ -632,13 +645,16 @@ nav .Right-Side a span {
 }
 .Home .sixth-container .row .col-lg-8 .button {
     color: #23a6f0;
-    border: 2px solid #23a6f0;
+    border: 1px solid #23a6f0;
     border-radius: 50px;
     padding: 1vh 1vw;
     font-weight: 700;
 }
 
 /* ----------------------------- Shop ----------------------------- */
+.Shop > .first-container {
+    text-align: center;
+}
 .Shop > .first-container .d-flex {
     align-items: center;
     justify-content: space-between;
@@ -662,16 +678,28 @@ nav .Right-Side a span {
 
     color: #252b42;
 }
-
+.Shop > .first-container a {
+    color: #8b4513;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    transition: 0.5s;
+}
+.Shop > .first-container .view-more:hover {
+    background-color: #8b4513;
+    color: #fff;
+    transition: 0.5s;
+}
 .Shop > .second-container {
     margin: 8vh auto;
 }
+
 .Shop > .second-container > h5 {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 600;
     color: #feba2b;
-    margin: 0;
+    margin: 0 0 0 0;
 }
 .Shop > .second-container > h3 {
     font-family: Montserrat;
@@ -707,7 +735,7 @@ nav .Right-Side a span {
     line-height: 24px;
     letter-spacing: 0.20000000298023224px;
     text-align: center;
-    color: #737373;
+    
 }
 .Shop > .second-container > .row > .col-lg-2 h6 {
     font-family: Montserrat;
@@ -1141,6 +1169,10 @@ nav .Right-Side a span {
     text-align: center;
     color: #252b42;
 }
+.Product-details > .first-container > .row > .product-slider {
+    border: none;
+    padding: 0;
+}
 .Product-details > .first-container > .row > .product-slider .main-img > img {
     width: 100%;
     margin: 1vh auto;
@@ -1152,35 +1184,45 @@ nav .Right-Side a span {
     width: 100px;
 }
 .Product-details > .first-container > .row > .product-slider img {
-    height: 100%;
+    height: 500px;
+    
 }
-.Product-details > .first-container > .row > .col-lg-7 > #reviews {
+
+.Product-details > .first-container > .row > .col-lg-7 {
+    display: flex;
+    /* align-items: center; */
+    padding:1vh 2vw;
+}
+.Product-details > .first-container > .row > .col-lg-7 #reviews {
     margin: 2vh 0vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 > h3 {
-    font-family: Poppins;
-    font-size: 25px;
+.Product-details > .first-container > .row > .col-lg-7 h3 {
+    font-family: Montserrat;
+    font-size: 30px;
     font-weight: 600;
 }
-.Product-details > .first-container > .row > .col-lg-7 > #reviews i {
+.Product-details > .first-container > .row > .col-lg-7 #reviews i {
     color: #f3cd03;
     font-size: 18px;
 }
-.Product-details > .first-container > .row > .col-lg-7 > #reviews > h6 {
+.Product-details > .first-container > .row > .col-lg-7 #reviews > h6 {
     margin: 0vh 1vw;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     color: #737373;
 }
-.Product-details > .first-container > .row > .col-lg-7 > h1 {
+.Product-details > .first-container > .row > .col-lg-7 h1 {
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
-
+color: #F8BA2C;
     margin: 3vh 0vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 > h6 {
+.Product-details > .first-container > .row > .col-lg-7 h1 s{
+    color:gray;
+}
+.Product-details > .first-container > .row > .col-lg-7 h6 {
     font-family: Montserrat;
     font-size: 17px;
     font-weight: 800;
@@ -1188,42 +1230,41 @@ nav .Right-Side a span {
     gap: 1vw;
     margin: 2vh 0vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 > h6 span {
+.Product-details > .first-container > .row > .col-lg-7 h6 span {
     color: #f3cd03;
 }
-.Product-details > .first-container > .row > .col-lg-7 > p {
-    font-family: Montserrat;
-    font-size: 17px;
-    font-weight: 500;
-    color: #858585;
-}
-.Product-details > .first-container > .row > .col-lg-7 > .item-color {
+/* .Product-details > .first-container > .row > .col-lg-7 p {
+    font-family: Montserrat !important;
+   
+} */
+
+.Product-details > .first-container > .row > .col-lg-7 .item-color {
     display: flex;
     justify-content: space-around;
     width: 150px;
 }
-.Product-details > .first-container > .row > .col-lg-7 > .item-color span {
+.Product-details > .first-container > .row > .col-lg-7 .item-color span {
     padding: 1vh 0.5vw;
     border-radius: 50%;
 }
-.Product-details > .first-container > .row > .col-lg-7 > .buy-now {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now {
     margin: 3vh 0vw;
     justify-content: space-between;
-    width: 280px;
+    /* width: 50%; */
     align-items: center;
 }
-.Product-details > .first-container > .row > .col-lg-7 > .buy-now > .d-flex {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex {
     gap: 1vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 > .buy-now > .d-flex > span {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex > span {
     border: 1px solid #e8e8e8;
     border-radius: 50%;
     padding: 0.7vh 0.5vw;
 }
-.Product-details > .first-container > .row > .col-lg-7 > .buy-now > .d-flex > span a {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex > span a {
     color: #000;
 }
-.Product-details > .first-container > .row > .col-lg-7 > .buy-now > button {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now  button {
     border: none;
     background: #feba2b;
     padding: 1vh 1vw;
@@ -1231,16 +1272,39 @@ nav .Right-Side a span {
     font-weight: 700;
     border-radius: 5px;
 }
-.Product-details > .first-container > .row > .col-lg-7 > h4 {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now  form a{
+    border: none;
+    background: #feba2b;
+    padding: 1vh 1vw;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+.Product-details > .first-container > .row > .col-lg-7 .buy-now>a{
+    /* background: #feba2b;
+   
+    color:#fff;
+   
+    margin:0vh 1vw; */
+    padding: 10px 14px;
+    border-radius:50%;
+    color: #000;
+    margin: 0vh 1vw;
+    border: 1px solid gray;
+
+}
+.Product-details > .first-container > .row > .col-lg-7 h4 {
     font-family: Poppins;
     font-size: 20px;
     font-weight: 600;
 }
-.Product-details > .first-container > .row > .col-lg-7 > .aboutToProduct {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000;
+.Product-details > .first-container > .row > .col-lg-7 .aboutToProduct {
+    font-family: Montserrat !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    color: #858585 !important;
+
 }
 
 .Product-details > .third-container {
@@ -1260,7 +1324,8 @@ nav .Right-Side a span {
     flex-direction: column;
 }
 .Product-details > .third-container > .row > .col-lg-2 img {
-    width: 100%;
+    width: 100% !important;
+    height:250px; 
 }
 .Product-details > .third-container > .row > .col-lg-2 h5 {
     font-family: Montserrat;
@@ -1272,6 +1337,8 @@ nav .Right-Side a span {
 }
 .Product-details > .third-container > .row > .col-lg-2 {
     margin: 1vh auto;
+    border-radius:10px;
+    overflow :hidden;
 }
 .Product-details > .third-container > .row > .col-lg-2 a {
     font-family: Montserrat;
@@ -1297,6 +1364,53 @@ nav .Right-Side a span {
     width: 100%;
 }
 
+.Product-details > .third-container > .row > .col-lg-2 form {
+    position:absolute;
+    top:220px;
+    width:89%;
+}
+.Product-details > .third-container > .row > .col-lg-2 form button{
+    background-color: #8B4513;
+    color:#fff;
+    width:100%;
+    padding:1vh 1vw;
+    border:none;
+    font-family: Montserrat !important;
+
+}
+.Product-details > .third-container > .row > .col-lg-2 form a{
+    background-color: #8B4513;
+    color:#fff;
+    width:100% !important;
+    padding:1.5vh 53px;
+    border:none;
+    font-size: 15px;
+    font-family: Montserrat !important;
+
+   
+}
+.Product-details > .third-container > .row > .col-lg-2 .wishlist-btn{
+    /* border:1px solid #fff !important; */
+    background:#fff;
+    padding:6px 7px;
+    color:#000;
+    border-radius:50%;
+}
+.Product-details > .third-container > .row > .col-lg-2 .rounded{
+    font-size:12px;
+    padding:2px 5px;
+}
+.Product-details > .third-container > .row > .col-lg-2 .rating {
+    color: #F8BA2C;
+    text-align: center;
+    font-size:12px;
+}
+.Product-details > .third-container > .row > .col-lg-2 .rating span{
+    color:#00000079;
+font-family:Poppins;
+font-size:14px;
+font-weight: 600;
+}
 .thumbnail {
     cursor: pointer;
     transition: transform 0.2s;
@@ -1340,7 +1454,6 @@ nav .Right-Side a span {
 }
 /* -----------------------------category ----------------------------- */
 .category .first-container {
-    background-color: #f4f4f4;
     padding: 2vh;
 }
 .category .first-container > div {
@@ -1389,12 +1502,24 @@ nav .Right-Side a span {
     padding: 1vh 1vw;
     border-radius: 5px;
     font-weight: 600;
+    transition:0.5s;
+}
+.wishlist > a:hover{
+    color: #fff;
+    background-color: #8B4513; 
+    border: 2px solid #8B4513;
+    transition:0.5s;
+
 }
 .wishlist .wishlist-row > div {
     border-radius: 10px;
     overflow: hidden;
 }
-.wishlist .wishlist-row .position-relative .addCart-btn {
+.item > div {
+    width: 230px;
+    margin: 1vh auto;
+}
+.item .position-relative .addCart-btn button {
     background: #8b4513;
     color: #fff;
     text-align: center;
@@ -1403,48 +1528,83 @@ nav .Right-Side a span {
     left: 0;
     border: none;
     width: 100%;
+    position: absolute;
+
     font-size: 15px;
 }
-.wishlist .wishlist-row .position-relative > div {
+.item .position-relative .addCart-btn button i {
+    margin: 0vh 5px;
+}
+.item .position-relative .addCart-btn a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #8b4513;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.item .position-relative > div {
     top: 10px;
     left: 5px;
 }
-.wishlist .wishlist-row .position-relative > div p {
+.item .position-relative > div p {
     font-size: 12px;
     padding: 3px 5px;
 }
-.wishlist .wishlist-row .position-relative > div .wishlist-btn {
+.item .position-relative > div .wishlist-btn {
     background-color: #fff;
-    padding: 1vh;
+    padding: 5px 8px;
     border-radius: 50%;
     color: #000;
 }
+ .added {
+    background-color: #f8ba2c !important    ;
+    color: #fff !important;
+    border: 1px solid #f8ba2c !important ;
+}
 
-.wishlist .wishlist-row .tittel {
-    color: #febb2a;
+.item .title {
+    color: #00000079;
     font-weight: 700;
     margin: 5px 0vw;
 }
-.wishlist .wishlist-row .prices {
-    color: #febb2a;
+.item .prices {
+    color: #eda304;
     font-weight: 600;
     font-size: 14px;
 }
-.wishlist .wishlist-row .prices > span {
+.item .prices > span {
     color: #00000079;
     margin: 0vh 0.5vw;
 }
-.wishlist .wishlist-row .rating {
+.item .rating {
     color: #febb2a;
     font-size: 12px;
     margin: 7px 0px;
 }
-.wishlist .wishlist-row .rating span {
+.item .rating span {
     color: #00000079;
     font-size: 14px;
     margin: 0vh 5px;
     font-weight: 700;
 }
+
+.page-item {
+    margin: 0;
+}
+.page-link {
+    margin: 0 5px;
+}
+.pagination > .active > .page-link {
+    background-color: #febb2a !important ;
+    border: 1px solid !important;
+    color: #8b4513 !important ;
+}
+
 /* -----------------------------Cart ----------------------------- */
 
 .cart .first-container .row {
@@ -1488,6 +1648,13 @@ nav .Right-Side a span {
 .cart .first-container .d-flex {
     justify-content: space-between;
 }
+.cart .first-container .d-flex a {
+    border: 2px solid #00000080;
+    background: transparent;
+    padding: 0.7vh 1vw;
+    border-radius: 5px;
+    color: #000;
+}
 .cart .first-container .d-flex button {
     border: 2px solid #00000080;
     background: transparent;
@@ -1497,10 +1664,20 @@ nav .Right-Side a span {
 }
 .cart .second-container input {
     border: 1px solid black;
-    padding: 1vh 0.5vw;
+    padding: 2vh 0.5vw;
     border-radius: 5px;
 }
 .cart .second-container button {
+    background: #febb2a;
+    padding: 1vh 1vw;
+    border: 1px solid #febb2a;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0vh 1vw !important;
+}
+.cart .second-container a {
     background: #febb2a;
     padding: 1vh 1vw;
     border: 1px solid #febb2a;
@@ -1513,19 +1690,19 @@ nav .Right-Side a span {
 .cart .second-container .cart-total {
     border: 2px solid #0000008e;
     border-radius: 5px;
-    padding: 1vh 1vw;
+    padding: 4vh 1vw;
 }
 .cart .second-container .cart-total .d-flex {
     justify-content: space-between;
-    margin: 1vh 0vw;
+    /* margin: 1vh 0vw; */
 }
 .cart .second-container .cart-total h4 {
     font-size: 22px;
     margin-bottom: 3vh;
 }
-.cart .second-container .cart-total button {
+.cart .second-container .cart-total a {
     /* background-image: linear-gradient(); */
-    margin: 1vh auto;
+    margin: 3vh auto 1vw auto !important;
 }
 /* -----------------------------check out ----------------------------- */
 .checkOut > .first-container > h1 {
@@ -1536,37 +1713,37 @@ nav .Right-Side a span {
 .checkOut > .first-container > .row > div {
     margin: 1vh auto;
 }
-.checkOut > .first-container > .row > div > form > label {
+.checkOut > .first-container > .row > div > label {
     font-family: poppins;
     font-size: 14px;
     color: #b2b2b2;
     margin: 2vh 0vw 5px 0vw;
 }
-.checkOut > .first-container > .row > div > form > input {
+.checkOut > .first-container > .row > div > input {
     width: 100%;
     padding: 1vh 0.5vw;
     background-color: #f5f5f5;
     border: none;
     border-radius: 5px;
 }
-.checkOut > .first-container > .row > div > form > div {
+.checkOut > .first-container > .row > div > div {
     margin: 2vh 0vw;
     display: flex;
     align-items: center;
 }
-.checkOut > .first-container > .row > div > form > input::placeholder {
+.checkOut > .first-container > .row > div > input::placeholder {
     color: #737373;
 }
-.checkOut > .first-container > .row > div > form > div > input {
+.checkOut > .first-container > .row > div > div > input {
     height: 15px;
     width: 15px;
     accent-color: #db4444;
     margin-right: 1vw;
 }
-.checkOut > .first-container > .row > div > form > input:focus {
+.checkOut > .first-container > .row > div > input:focus {
     outline: none;
 }
-.checkOut > .first-container > .row > div > form > diV span {
+.checkOut > .first-container > .row > div > diV span {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
@@ -1579,27 +1756,37 @@ nav .Right-Side a span {
     align-items: center;
 }
 .checkOut > .first-container > .row > div > .items img {
-    width: 50px;
+    width: 60px;
+    border: 1px solid rgba(128, 128, 128, 0.278);
 }
 .checkOut > .first-container > .row > div > .items h5 {
     font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+    color: #f8ba2c;
 }
 .checkOut > .first-container > .row > div > .items .price {
     font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
 }
-.checkOut > .first-container > .row > div > .payment-section {
-    margin: 2vh 0vw !important;
+.checkOut > .first-container > .row > .payment-card .payment-section {
+    margin: 5vh 0vw !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.checkOut > .first-container > .row > div > .payment-section > div > div {
+.checkOut > .first-container > .row > .payment-card .payment-section > div {
+    width: 100%;
+}
+.checkOut > .first-container > .row > .payment-card .payment-section > div > div {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
 }
-.checkOut > .first-container > .row > div > .payment-section p {
+.checkOut > .first-container > .row > .payment-card .payment-section p {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
@@ -1681,25 +1868,13 @@ nav .Right-Side a span {
 }
 /* -----------------------------User dash board----------------------------- */
 .my-Account > .first-container > h1 {
-    font-family: Poppins;
+    font-family: Poppins !important;
     font-size: 36px;
     font-weight: 600 !important;
 }
-.my-Account > .first-container > .row {
-    margin: 3vh auto;
-}
-.my-Account > .first-container > .row > div > h3 {
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 2vh 0vw;
-}
-.my-Account > .first-container > .row > div > h3:hover {
-    color: #8b4513;
-    cursor: pointer;
-}
+
 .my-Account > .first-container > .row > div > div > h2 {
-    font-family: Poppins;
+    font-family: Poppins !important;
     font-size: 25px;
     font-weight: 500;
     color: #8b4513;
@@ -1714,7 +1889,7 @@ nav .Right-Side a span {
 }
 .my-Account > .first-container > .row > div > #My-Profile-section label {
     margin: 1vh 0vw;
-    font-family: Poppins;
+    font-family: Poppins !important;
     font-size: 17px;
 }
 .my-Account > .first-container > .row > div > #My-Profile-section .col-lg-6 input {
@@ -1745,31 +1920,11 @@ nav .Right-Side a span {
     width: 150px;
     float: right;
 }
-.my-Account > .first-container > .row > div > #My-Profile-section {
-    display: none;
-}
+
 .my-Account > .first-container > .row > div > #address-section {
-    display: none;
     margin: 5vh auto;
 }
-.my-Account > .first-container > .row > div > #Orders-section {
-    display: none;
-}
 
-.my-Account > .first-container > .row > div > .view-btn-section {
-    display: none;
-}
-.my-Account > .first-container > .row > div > #address-section button {
-    padding: 1vh 1vw;
-    border: none !important;
-    background-color: #febb2b;
-    font-weight: 700;
-    color: #fff;
-    border-radius: 10px;
-}
-.my-Account > .first-container > .row > div > #address-section .for-tab-mobile {
-    display: none;
-}
 .my-Account > .first-container > .row > div > #address-section h4 {
     color: #8b4513;
     font-size: 16px;
@@ -1779,11 +1934,6 @@ nav .Right-Side a span {
 .my-Account > .first-container > .row > div > #address-section h6 {
     font-size: 20px;
     font-weight: 600;
-}
-.my-Account > .first-container > .row > div > #address-section h6 i {
-    color: #8b451359;
-    font-size: 15px;
-    margin: 0px 10px;
 }
 
 .my-Account > .first-container > .row > div > div textarea {
@@ -1795,9 +1945,10 @@ nav .Right-Side a span {
     margin: 10px 0px;
     margin: 3vh 0vw;
 }
-.my-Account > .first-container > .row > div > a {
-    color: #f34031;
-    font-weight: 600;
+.my-Account > .first-container > .row .text-center > a {
+    color: #000;
+
+    font-size: 18px;
 }
 /* -----------------------------Footer ----------------------------- */
 
@@ -1842,12 +1993,16 @@ footer > .first-container-footer > .row > .col-lg-6 form button {
     color: #feba2a;
     font-weight: 700;
 }
+footer .footer-second-section {
+    display: flex;
+    justify-content: space-between;
+}
 footer .row .col-md-6 {
     margin: 3vh auto !important;
 }
 footer > .row > .col-lg-3 p {
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     margin: 1vh 0vw;
 }
@@ -1856,13 +2011,13 @@ footer > .row > .col-lg-3 .d-flex {
 }
 
 footer .row .col-lg-3 img {
-    width: 60%;
+    width: 40%;
 }
 footer .row .col-lg-2 {
     margin: 2vh 0vw;
 }
 footer .row .col-lg-2 h6 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
 }
 footer .row .col-lg-2 ul {
@@ -1873,7 +2028,7 @@ footer .row .col-lg-2 ul li {
     margin: 1vh 0vw;
 }
 footer .row .col-lg-2 ul li a {
-    font-size: 18px;
+    font-size: 16px;
     /* font-weight: 500; */
     color: #00000099;
 }
@@ -1973,29 +2128,21 @@ footer .d-flex .logos > img {
     margin: 0;
 }
 
-
-
-
-
-
-
-
-.orderDetail   .row > div > h3 a {
+.orderDetail .row > div > h3 a {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
     margin: 2vh 0vw;
     color: #000;
 }
-.orderDetail  .row > div > h3 :hover {
+.orderDetail .row > div > h3 :hover {
     color: #8b4513;
     cursor: pointer;
 }
-.orderDetail  .container .row > div > a{
-    color: #f34031;
+.orderDetail .container .row > div > a {
+    /* color: #f34031; */
     font-weight: 600;
     margin: 4vh 0vw;
-   
 }
 .orderDetail > .first-container > .row > div > .view-btn-section h3 {
     font-size: 16px;
@@ -2055,7 +2202,6 @@ footer .d-flex .logos > img {
     color: #fff;
     padding: 5px;
     border-radius: 15px;
-   
 }
 
 .orderDetail .ordered {
@@ -2081,51 +2227,195 @@ footer .d-flex .logos > img {
     font-weight: 700;
     float: right;
 }
-.Sign-In >.container, .Register >.container
-{
+.Sign-In > .container,
+.Register > .container {
     text-align: center;
     width: 30%;
     margin: 5vh auto;
 }
-.Sign-In >.container> h1,
-.Register >.container>h1{
-    font-size: 30px ;
-    color: #8b4513 ;
+.Sign-In > .container > h1,
+.Register > .container > h1 {
+    font-size: 30px;
+    color: #8b4513;
     font-weight: 600;
     letter-spacing: -2px;
     word-spacing: 5px;
-    border-bottom: 2px solid #8b4513  ;
-    width: 100px;
-    margin:4vh auto;
+    border-bottom: 2px solid #8b4513;
+    width: 150px;
+    margin: 4vh auto;
 }
-.Sign-In >.container input,
-.Register >.container input
-{
+.Sign-In > .container input,
+.Register > .container input {
     width: 100%;
     margin: 1vh 0vw;
     border: 1px solid #000;
     padding: 1vh 1vw;
 }
-.Sign-In >.container button,
-.Register >.container button{
+.Sign-In > .container button,
+.Register > .container button {
     width: 100%;
     margin: 1vh 0vw;
     border: none;
-    background-color: #8b4513 ;
+    background-color: #8b4513;
     padding: 1vh 1vw;
     color: #fff;
     font-weight: 700;
-}.Sign-In >.container p,
-.Register >.container p
-{
+}
+.Sign-In > .container p,
+.Register > .container p {
     font-size: 12px;
     text-align: left;
     margin: 2vh 0vw;
 }
-.Sign-In >.container p a,
-.Register >.container p a{
-    color: #febb2b ; 
+.Sign-In > .container p a,
+.Register > .container p a {
+    color: #febb2b;
     font-size: 14px;
     margin: 0vh 0.5vw;
     font-weight: 600;
+}
+.sider-bar {
+    /* margin: 3vh 0vw; */
+    padding: 3vh 0vw;
+}
+.sider-bar a {
+    margin: 0px 0vw !important;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+.sider-bar a:hover {
+    color: #8b4513 !important;
+}
+.sider-bar .active {
+    color: #8b4513 !important;
+}
+.change-password h1 {
+    font-family: Poppins !important;
+    font-size: 36px;
+    font-weight: 600 !important;
+}
+.change-password .first-conrtainer {
+    margin: 3vh 0vw !important;
+}
+
+.change-password .change-pass form label {
+    color: #8b4513;
+    font-weight: 600;
+    margin-top: 3vh;
+}
+.change-password .change-pass form input {
+    width: 100%;
+    padding: 1vh 0.5vw;
+    margin: 1vh 0%;
+    box-shadow: 0px 0px 10px 0px #0000000e;
+    border: none;
+    border-radius: 10px;
+}
+.change-password .change-pass form button {
+    border: none;
+    padding: 1vh 2vw;
+    margin: 2vh 0vw;
+    border-radius: 5px;
+    background: #feba2a;
+    color: #fff;
+    float: right;
+    font-weight: 700;
+}
+.orders h1 {
+    font-family: Poppins !important;
+    font-size: 36px;
+    font-weight: 600 !important;
+}
+.orders .table-responsive {
+    box-shadow: 0px 0px 10px 0px #0000000e;
+    border-radius: 10px;
+    padding: 2vh 1vw;
+}
+.orders .table-responsive th {
+    color: #8b4513;
+}
+
+.bank-accounts > .container {
+    margin: 4vh auto;
+}
+
+.bank-accounts > .container > .row > div {
+    width: 18%;
+    margin: 1vh auto;
+    box-shadow: 0px 0px 10px 0px #00000017;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bank-accounts > .container > .row > div img {
+    width: 120px;
+    height: auto;
+}
+.bank-details > .first-container {
+    display: flex;
+    display: flex;
+    align-items: center;
+    padding:3vh 1vw;
+    justify-content: space-between;
+    border-bottom: 2px solid #8B4513;
+}
+.bank-details > .first-container > div h3 {
+    margin: 0;
+}
+.bank-details > .first-container > div p {
+    margin: 0;
+    font-size: 16px;
+}
+.bank-details > .first-container img {
+    width: 150px;
+}
+.bank-details > .first-container .image {
+    box-shadow: 0px 0px 10px 0px #00000017;
+    border-radius: 10px;
+}
+.bank-details >.second-container h5{
+    margin:0;
+    margin-top:2vh;
+    font-weight:600;
+    
+}
+.bank-details >.second-container p{
+    margin:0;
+}
+.bank-details >.third-container {
+    margin:4vh auto;
+} 
+
+
+.bank-details >.third-container form >div {
+    display: flex;
+    justify-content: flex-start;
+    gap:1vw;
+    align-items: center;
+
+    
+}
+.bank-details > .third-container form > div input[type="file"]::file-selector-button {
+    border: 2px solid #F8BA2C;
+    background: transparent;
+    border-radius:5px;
+    color:#F8BA2C;
+    padding:0.5vh 1vw;
+
+}
+.bank-details > .third-container form > div button{
+    background:#F8BA2C;
+    border:none;
+    color:#ffffff;
+    padding:1vh 2vw;
+    border-radius:5px
+
+}
+.bank-details >.third-container form  img{
+    width:100px;
 }

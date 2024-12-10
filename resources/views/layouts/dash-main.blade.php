@@ -8,7 +8,7 @@
     <meta content="Minimal Admin & Dashboard Template" name="description">
     <meta content="Themesdesign" name="author">
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ asset('tailwick/assets/images/favicon.ico') }}">
+    <link rel="icon" type="image/icon" href="{{ asset('tailwick/assets/images/LOGO.png') }}">
     <!-- Layout config Js -->
     <script src="{{ asset('assets/js/layout.js') }}"></script>
     <!-- Icons CSS -->

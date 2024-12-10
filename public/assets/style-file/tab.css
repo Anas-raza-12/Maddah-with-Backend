@@ -585,4 +585,10 @@
         width: 80%;
         padding: 4vh 3vw;
     }
+    .bank-accounts > .container > .row > div {
+        width: 24%;
+       
+    
+        
+    }
 }

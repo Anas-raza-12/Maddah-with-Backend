@@ -1,4 +1,22 @@
 @media (max-width: 445px) {
+    .links {
+        margin: 1vh auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .links > a {
+        margin: 0vh 1vw;
+        font-size: 08px !important;
+        font-weight: 400 !important;
+    }
+    .links > .disable {
+        color: gray;
+    }
+    .links > .active { /* corrected to lowercase for consistency */
+        color: #000;
+    }
+    
     .category-section .row .first-img .position-absolute {
         width: 100%;
     }
@@ -846,6 +864,9 @@
         margin: 1vh auto;
         height: 300px;
     }
+    .Product-details > .first-container > .row > .product-slider img {
+        height: 400px   ;
+    }
     .Product-details > .first-container > .row > .col-lg-6 .thumbnails img {
         transition: 0.5s;
         height: 80px !important;
@@ -1081,5 +1102,15 @@
         text-align: center;
         width: 90%;
         margin: 10vh auto 20vh auto;
+    }
+    .bank-accounts > .container > .row > div {
+        width: 29%;
+       height:70px;
+    
+        
+    }
+    .bank-accounts > .container > .row > div  img {
+        width:50px;
+        height: auto;
     }
 }

@@ -11,15 +11,17 @@ class ValidUser
 {
     /**
      * Handle an incoming request.
-     *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next, $role = null): Response
     {
-        if(Auth::check()) {
-            return $next($request);
-        } else {
+        if (!Auth::check()) {
             return redirect()->route('login');
         }
+        $user = Auth::user();
+        if ($role && $user->user_type !== $role) {
+            return redirect()->route($user->user_type === 'admin' ? 'dashboard' : 'user.dashboard');
+        }
+
+        return $next($request);
     }
 }

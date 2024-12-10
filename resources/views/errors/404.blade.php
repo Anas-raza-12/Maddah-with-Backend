@@ -11,8 +11,8 @@
 
 <div class="container first-conrtainer">
     <h1>404 Not Found</h1>
-    <p>Your visited page not found. You may go home page.</p>
-    <a href="/">Back to home page</a>
+    <p class="mt-3 mb-5">Your visited page not found. You may go home page.</p>
+    <a href="{{ route('home') }}">Back to home page</a>
 </div>
 
 @endsection

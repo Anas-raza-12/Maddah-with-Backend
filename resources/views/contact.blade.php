@@ -2,7 +2,7 @@
 <div class="first-container container">
       <div class="row">
             <div class="col-lg-6 d-flex justify-content-start">
-                  <div>
+                  <div data-aos="fade-right"  data-aos-duration="1000">
                         <h5>Contact Us</h5>
                         <h1>Get in touch today!</h1>
                         <p>
@@ -18,7 +18,7 @@
                         </div>
                   </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-end">
+            <div data-aos="fade-left"  data-aos-duration="1000" class="col-lg-6 d-flex justify-content-end">
                   <img src="{{ asset('assets/image/hero-cover-2.png') }}" alt="" />
             </div>
       </div>
