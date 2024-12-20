@@ -24,7 +24,7 @@
       </div>
 </div>
 <div class="second-container container text-center">
-      <h5>VISIT OUR OFFICE</h5>
+      <h5 class="h4">VISIT OUR OFFICE</h5>
       <h1>
             We Help Small Businesses <br />
             With Big Ideas

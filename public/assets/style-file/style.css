@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"); */
 :root {
     --container-shadow: 0px 0px 20px 0px #00000021;
 }
@@ -697,15 +697,13 @@ nav .Right-Side a span {
 .About > .first-container > .row > .col-lg-6 {
     align-items: center;
     justify-content: center;
-    
 }
 .About > .first-container > .row > .col-lg-6 h4 {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     color: #febb2a;
-    text-align:left;
-
+    text-align: left;
 }
 .About > .first-container > .row > .col-lg-6 h1 {
     color: #8b4513;
@@ -713,17 +711,14 @@ nav .Right-Side a span {
     font-weight: 700;
     line-height: 60px;
     margin: 2vh 0vw;
-    text-align:left;
-
+    text-align: left;
 }
 .About > .first-container > .row > .col-lg-6 p {
-    
     color: #737373;
     font-size: 16px;
     font-weight: 500;
     margin: 3vh auto;
-    text-align:left;
-
+    text-align: left;
 }
 .About > .first-container > .row > .col-lg-6 a {
     border: none;
@@ -752,7 +747,6 @@ nav .Right-Side a span {
     margin: 2vh 0vw;
 }
 .About > .second-container > .row > .col-lg-6 h4 {
-
     font-size: 20px;
     font-weight: 700;
     line-height: 32px;
@@ -791,7 +785,6 @@ nav .Right-Side a span {
     content: "+";
 }
 .About > .third-container > .row > .col-lg-3 h6 {
-
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -804,14 +797,14 @@ nav .Right-Side a span {
 }
 .About > .forth-container video {
     border-radius: 20px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .About > .fivth-container {
     margin: 100px auto;
 }
 .About > .fivth-container h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600 !important;
     color: #252b42;
 }
@@ -820,7 +813,6 @@ nav .Right-Side a span {
     font-size: 16px;
     font-weight: 500;
     margin: 0vh auto;
-   
 }
 .About > .fivth-container .col-lg-2 {
     margin: 100px auto;
@@ -831,13 +823,11 @@ nav .Right-Side a span {
     object-fit: cover;
 }
 .About > .fivth-container .col-lg-2 h4 {
-   
     font-size: 20px;
     font-weight: 800;
     margin: 2vh auto;
 }
 .About > .fivth-container .col-lg-2 p {
-
     font-size: 16px;
     font-weight: 700;
     margin: 2vh;
@@ -856,14 +846,12 @@ nav .Right-Side a span {
     margin: 100px auto;
 }
 .About > .sixth-container h1 {
-    
     font-size: 40px;
     font-weight: 700;
     color: #252b42;
     margin: 20px auto;
 }
 .About > .sixth-container p {
-
     font-size: 16px;
     font-weight: 500;
     margin: 2vh;
@@ -878,7 +866,6 @@ nav .Right-Side a span {
     margin: 70px 0vw !important;
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > h6 {
-  
     font-size: 18px;
     font-weight: 600;
     color: #8b4513;
@@ -890,11 +877,10 @@ nav .Right-Side a span {
     color: #fff;
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > p {
-    
     font-size: 16px;
     font-weight: 500;
     margin: 2vh;
-    color:#ffffff;
+    color: #ffffff;
     margin: 30px 0px;
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > a {
@@ -904,7 +890,6 @@ nav .Right-Side a span {
     margin: 30px 0vw !important ;
     border-radius: 5px;
     font-size: 16px;
-
 }
 .About > .seventh-container > .container > .row > .col-lg-6 {
     justify-content: center;
@@ -927,18 +912,19 @@ nav .Right-Side a span {
     align-items: center;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h5 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #febb2a;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 24px !important;
+    color: #febb2a !important;
+    text-align: left !important;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h1 {
     color: #8b4513;
     font-size: 50px;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 60px;
     margin: 2vh 0vw;
-    letter-spacing: -4px;
+    text-align: left;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > p {
     color: #737373;
@@ -947,7 +933,6 @@ nav .Right-Side a span {
     margin: 1vh auto;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h4 {
-
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
@@ -968,14 +953,12 @@ nav .Right-Side a span {
     margin: 100px auto;
 }
 .Contact > .second-container > h5 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #febb2a;
-    
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 24px !important;
+    color: #febb2a !important;
 }
 .Contact > .second-container > h1 {
-
     font-size: 20px;
     font-weight: 700;
     line-height: 32px;
@@ -988,6 +971,7 @@ nav .Right-Side a span {
     justify-content: center;
     align-items: center;
     padding: 5vh 1vw;
+    border-radius: 10px;
 }
 
 .Contact > .second-container > .row > .col-lg-3 > div > i {
@@ -997,17 +981,19 @@ nav .Right-Side a span {
 }
 .Contact > .second-container > .row > .col-lg-3 > div > h6 a {
     color: #8b4513;
+    font-size: 16px;
 }
 .Contact > .second-container > .row > .col-lg-3 > div > h5 {
-    font-size: 20px;
+    font-size: 14px;
     margin: 3vh auto;
 }
 .Contact > .second-container > .row > .col-lg-3 > div > a {
     color: #f2bb2a;
     border: 1px solid #f2bb2a;
-    padding: 1.3vh 1.5vw;
+    padding: 1vh 1.5vw;
     border-radius: 30px;
     margin: 20px auto;
+    font-size: 14px;
 }
 .Contact > .second-container > .row .braon-bg > div > h6 > a {
     color: #fff;
@@ -1022,6 +1008,7 @@ nav .Right-Side a span {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 2vh 0vw;
 }
 .Contact > .third-container > .row > div > div {
     display: flex;
@@ -1034,22 +1021,20 @@ nav .Right-Side a span {
 .Contact > .third-container > .row > div > div > div > span {
     background: #8b4513;
     color: #fff;
-    padding: 5px 9px;
+    padding: 5px 10px;
     border-radius: 50%;
     margin: 10px 10px 10px 0px;
 }
 .Contact > .third-container > .row > div > div > div > h6 {
     margin: 0;
 
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .Contact > .third-container > .row > div > div > p {
-    font-family: Poppins;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 1px 0px;
 }
 .Contact > .third-container > .row > div > div > p > a {
@@ -1068,6 +1053,7 @@ nav .Right-Side a span {
 }
 .Contact > .third-container > .row > div > form input::placeholder {
     color: gray;
+    font-size: 12px;
 }
 .Contact > .third-container > .row > div > form textarea {
     width: 95%;
@@ -1079,11 +1065,15 @@ nav .Right-Side a span {
     border: none;
     background: #feba2b;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 10px;
-    padding: 0.6vh 1vw;
+    padding: 1vh 1.5vw;
     float: right;
     margin: 1vh 1vw;
+    font-size: 13px;
+}
+.Contact > .third-container > .row > div > form textarea::placeholder {
+    font-size: 12px;
 }
 /* -----------------------------Product-details----------------------------- */
 .Product-details > .first-container > .d-flex {
@@ -1092,7 +1082,6 @@ nav .Right-Side a span {
     margin: 3vh 0vw;
 }
 .Product-details > .first-container > .d-flex a {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
@@ -1120,14 +1109,13 @@ nav .Right-Side a span {
 
 .Product-details > .first-container > .row > .col-lg-7 {
     display: flex;
-    /* align-items: center; */
+
     padding: 1vh 2vw;
 }
 .Product-details > .first-container > .row > .col-lg-7 #reviews {
     margin: 2vh 0vw;
 }
 .Product-details > .first-container > .row > .col-lg-7 h3 {
-    font-family: Montserrat;
     font-size: 30px;
     font-weight: 600;
 }
@@ -1137,13 +1125,12 @@ nav .Right-Side a span {
 }
 .Product-details > .first-container > .row > .col-lg-7 #reviews > h6 {
     margin: 0vh 1vw;
-    font-family: Montserrat;
+
     font-size: 16px;
     font-weight: 700;
     color: #737373;
 }
 .Product-details > .first-container > .row > .col-lg-7 h1 {
-    font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
     color: #f8ba2c;
@@ -1153,7 +1140,6 @@ nav .Right-Side a span {
     color: gray;
 }
 .Product-details > .first-container > .row > .col-lg-7 h6 {
-    font-family: Montserrat;
     font-size: 17px;
     font-weight: 800;
     color: #737373;
@@ -1163,10 +1149,6 @@ nav .Right-Side a span {
 .Product-details > .first-container > .row > .col-lg-7 h6 span {
     color: #f3cd03;
 }
-/* .Product-details > .first-container > .row > .col-lg-7 p {
-    font-family: Montserrat !important;
-   
-} */
 
 .Product-details > .first-container > .row > .col-lg-7 .item-color {
     display: flex;
@@ -1180,31 +1162,18 @@ nav .Right-Side a span {
 .Product-details > .first-container > .row > .col-lg-7 .buy-now {
     margin: 3vh 0vw;
     justify-content: space-between;
-    /* width: 50%; */
+
     align-items: center;
 }
 .Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex {
     gap: 1vw;
 }
-.Product-details
-    > .first-container
-    > .row
-    > .col-lg-7
-    .buy-now
-    > .d-flex
-    > span {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex > span {
     border: 1px solid #e8e8e8;
     border-radius: 50%;
     padding: 0.7vh 0.5vw;
 }
-.Product-details
-    > .first-container
-    > .row
-    > .col-lg-7
-    .buy-now
-    > .d-flex
-    > span
-    a {
+.Product-details > .first-container > .row > .col-lg-7 .buy-now > .d-flex > span a {
     color: #000;
 }
 .Product-details > .first-container > .row > .col-lg-7 .buy-now button {
@@ -1717,13 +1686,7 @@ nav .Right-Side a span {
 .checkOut > .first-container > .row > .payment-card .payment-section > div {
     width: 100%;
 }
-.checkOut
-    > .first-container
-    > .row
-    > .payment-card
-    .payment-section
-    > div
-    > div {
+.checkOut > .first-container > .row > .payment-card .payment-section > div > div {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
@@ -1834,13 +1797,7 @@ nav .Right-Side a span {
     font-family: Poppins !important;
     font-size: 17px;
 }
-.my-Account
-    > .first-container
-    > .row
-    > div
-    > #My-Profile-section
-    .col-lg-6
-    input {
+.my-Account > .first-container > .row > div > #My-Profile-section .col-lg-6 input {
     width: 95%;
     padding: 1vh 0.5vw;
     box-shadow: 0px 0px 10px 0px #0000000e;
@@ -1849,13 +1806,7 @@ nav .Right-Side a span {
     margin: autor;
 }
 
-.my-Account
-    > .first-container
-    > .row
-    > div
-    > #My-Profile-section
-    .col-lg-12
-    input {
+.my-Account > .first-container > .row > div > #My-Profile-section .col-lg-12 input {
     width: 100%;
     padding: 1vh 0.5vw;
     margin: 1vh 0%;
@@ -2350,11 +2301,7 @@ footer .d-flex .logos > img {
     gap: 1vw;
     align-items: center;
 }
-.bank-details
-    > .third-container
-    form
-    > div
-    input[type="file"]::file-selector-button {
+.bank-details > .third-container form > div input[type="file"]::file-selector-button {
     border: 2px solid #f8ba2c;
     background: transparent;
     border-radius: 5px;
