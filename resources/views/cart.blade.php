@@ -36,7 +36,7 @@
             </div>
         @endforeach
     @endif
-    <div class="d-flex"><a href="{{ route('shop') }}">Return To Shop</a>{{--<button>Update Cart</button>--}}</div>
+    <div class="d-flex"><a href="{{ route('shop') }}">Return To Shop</a></div>
 </div>
 
 <div class="second-container container my-4">   

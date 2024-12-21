@@ -109,7 +109,7 @@
 				@endif
 			</form>
 
-      <div  style="position: absolute; margin:5px; ">
+      <div  style="position: absolute; margin:5px; top:10px; font-family:'Montserrat' !important;  ">
         @if($discountPercentage)
             <p class="rounded" style="background: #319441; color: #fff;">-{{$discountPercentage}}%</p>
         @else

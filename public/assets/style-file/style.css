@@ -21,7 +21,7 @@ h6 {
 }
 p,
 span {
-    font-family: "Montserrat";
+    font-family: "Montserrat " !important;
 }
 a {
     text-decoration: none !important;
@@ -46,19 +46,19 @@ a {
     gap: 1vh 1vw;
     padding: 1vh 2vw;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 14px;
 }
 .top-line > .row > .d-flex a {
     color: white;
-    font-weight: 700;
-    font-size: 17px;
+    /* font-weight: 700; */
+    font-size: 12px !important;
 }
 
 .category-section-2 > div {
     margin: 1vh auto;
 }
 .category-section-2 .categories {
-    height: 200px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@ a {
 .category-section-2 .categories > div a h6 {
     margin: 0;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
 }
 .category-section-2 .categories > div a p {
@@ -124,6 +124,7 @@ nav a {
     color: black !important;
     font-weight: 600;
     margin: 1vh 0.5vw;
+    font-size: 14px !important;
 }
 nav img {
     width: 100px;
@@ -132,7 +133,7 @@ nav img {
 nav .Right-Side a {
     color: #feba2a !important;
     font-weight: 600 !important;
-    font-size: 17px;
+    font-size: 14px;
 }
 nav .Right-Side a span {
     font-weight: 600 !important;
@@ -596,8 +597,8 @@ nav .Right-Side a span {
 }
 .Shop > .first-container .d-flex h1 {
     margin: 0;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 600;
     color: #252b42;
 }
 .Shop > .first-container .d-flex .d-flex {
@@ -614,7 +615,7 @@ nav .Right-Side a span {
     font-size: 14px;
 
     color: #8b4513;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 10px;
     padding: 1vh 1vw;
     transition: 0.5s;
@@ -629,13 +630,13 @@ nav .Right-Side a span {
 }
 
 .Shop > .second-container > h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     color: #febb2a;
 }
 .Shop > .second-container > h2 {
-    font-size: 20px;
+    font-size: 14px !important;
     font-weight: 700;
     line-height: 32px;
     margin: 1vh auto;
@@ -643,7 +644,8 @@ nav .Right-Side a span {
 }
 .Shop > .second-container > p {
     color: #737373;
-    font-size: 16px;
+    font-family: "poppins" !important;
+    font-size: 14px;
     font-weight: 500;
     margin: 1vh auto;
 }
@@ -652,12 +654,16 @@ nav .Right-Side a span {
 }
 .Shop > .second-container > .row > .col-lg-2 img {
     width: 100%;
+    object-fit: cover;
 }
 .Shop > .second-container > .row > .col-lg-2 h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     margin: 1vh auto;
     color: #febb2a;
+}
+.Shop > .second-container > .row > .col-lg-2 .title {
+    font-size: 14px;
 }
 .Shop > .second-container > .row > .col-lg-2 a {
     font-size: 14px;
@@ -666,15 +672,23 @@ nav .Right-Side a span {
     text-align: center;
 }
 .Shop > .second-container > .row > .col-lg-2 h6 {
-    font-size: 18px;
+    font-size: 14px !important;
     font-weight: 700;
     margin: 1vh;
     text-align: center;
     color: #bdbdbd;
     margin-bottom: 4vh;
 }
+.Shop > .second-container > .row > .col-lg-2 .prices s {
+    font-family: "poppins" !important;
+}
+.Shop > .second-container > .row > .col-lg-2 .prices span {
+    font-family: "poppins" !important;
+}
 .Shop > .second-container > .row > .col-lg-2 h6 span {
     color: #feba2b;
+    font-size: 12px !important;
+    font-family: "montserrat" !important;
 }
 .Shop > .second-container button {
     font-size: 14px;
@@ -684,6 +698,9 @@ nav .Right-Side a span {
     border: 1px solid #8b4513;
     padding: 1.5vh 1.5vw;
     border-radius: 5px;
+}
+.Shop > .second-container form a {
+    font-weight: 500 !important;
 }
 .Shop > .container-fluid > img {
     width: 100%;
@@ -719,6 +736,7 @@ nav .Right-Side a span {
     font-weight: 500;
     margin: 3vh auto;
     text-align: left;
+    font-family: "poppins" !important;
 }
 .About > .first-container > .row > .col-lg-6 a {
     border: none;
@@ -758,6 +776,7 @@ nav .Right-Side a span {
     font-size: 16px;
     font-weight: 500;
     margin: 0vh auto;
+    font-family: "poppins" !important;
 }
 .About > .third-container {
     margin: 100px auto;
@@ -813,7 +832,9 @@ nav .Right-Side a span {
     font-size: 16px;
     font-weight: 500;
     margin: 0vh auto;
+    font-family: "poppins" !important;
 }
+
 .About > .fivth-container .col-lg-2 {
     margin: 100px auto;
 }
@@ -832,6 +853,7 @@ nav .Right-Side a span {
     font-weight: 700;
     margin: 2vh;
     color: #737373;
+    font-family: "poppins" !important;
 }
 
 .About > .fivth-container .col-lg-2 .icons {
@@ -856,6 +878,7 @@ nav .Right-Side a span {
     font-weight: 500;
     margin: 2vh;
     color: #737373;
+    font-family: "poppins" !important;
 }
 
 .About > .sixth-container img {
@@ -882,6 +905,8 @@ nav .Right-Side a span {
     margin: 2vh;
     color: #ffffff;
     margin: 30px 0px;
+    font-family: "poppins" !important;
+
 }
 .About > .seventh-container > .container > .row > .col-lg-6 > div > a {
     color: #fff;
@@ -931,6 +956,7 @@ nav .Right-Side a span {
     font-size: 16px;
     font-weight: 500;
     margin: 1vh auto;
+    font-family: "poppins" !important;
 }
 .Contact > .first-container > .row > .col-lg-6 > div > h4 {
     font-size: 20px;
@@ -1027,7 +1053,7 @@ nav .Right-Side a span {
 }
 .Contact > .third-container > .row > div > div > div > h6 {
     margin: 0;
-
+font-family: "montserrat" !important;
     font-size: 14px;
     font-weight: 600;
 }
@@ -1036,6 +1062,7 @@ nav .Right-Side a span {
     font-size: 14px;
     font-weight: 500;
     margin: 1px 0px;
+    font-family: "poppins" !important;
 }
 .Contact > .third-container > .row > div > div > p > a {
     color: #8b4513;
@@ -1096,12 +1123,14 @@ nav .Right-Side a span {
 .Product-details > .first-container > .row > .product-slider .main-img > img {
     width: 100%;
     margin: 1vh auto;
-    height: 400px;
+    height: 300px;
+    object-fit: cover !important;
 }
 .Product-details > .first-container > .row > .product-slider .thumbnails img {
     transition: 0.5s;
     height: 80px !important;
     width: 100px;
+    object-fit: cover !important;
 }
 .Product-details > .first-container > .row > .product-slider img {
     height: 500px;
@@ -1116,38 +1145,40 @@ nav .Right-Side a span {
     margin: 2vh 0vw;
 }
 .Product-details > .first-container > .row > .col-lg-7 h3 {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 700;
 }
 .Product-details > .first-container > .row > .col-lg-7 #reviews i {
     color: #f3cd03;
-    font-size: 18px;
+    font-size: 14px;
 }
 .Product-details > .first-container > .row > .col-lg-7 #reviews > h6 {
     margin: 0vh 1vw;
 
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #737373;
 }
 .Product-details > .first-container > .row > .col-lg-7 h1 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
     color: #f8ba2c;
     margin: 3vh 0vw;
 }
 .Product-details > .first-container > .row > .col-lg-7 h1 s {
     color: gray;
+    margin: 0vh 0.5vw;
 }
 .Product-details > .first-container > .row > .col-lg-7 h6 {
-    font-size: 17px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 600;
     color: #737373;
     gap: 1vw;
     margin: 2vh 0vw;
 }
 .Product-details > .first-container > .row > .col-lg-7 h6 span {
     color: #f3cd03;
+    font-family: "Montserrat" !important;
 }
 
 .Product-details > .first-container > .row > .col-lg-7 .item-color {
@@ -1189,31 +1220,27 @@ nav .Right-Side a span {
     background: #feba2b;
     padding: 1vh 1vw;
     color: white;
-    font-weight: 700;
     border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
 }
 .Product-details > .first-container > .row > .col-lg-7 .buy-now > a {
-    /* background: #feba2b;
-   
-    color:#fff;
-   
-    margin:0vh 1vw; */
     padding: 10px 14px;
     border-radius: 50%;
     color: #000;
     margin: 0vh 1vw;
     border: 1px solid gray;
+    font-size: 14px;
 }
 .Product-details > .first-container > .row > .col-lg-7 h4 {
-    font-family: Poppins;
-    font-size: 20px;
+    font-size: 16px !important;
     font-weight: 600;
 }
 .Product-details > .first-container > .row > .col-lg-7 .aboutToProduct {
-    font-family: Montserrat !important;
-    font-size: 17px !important;
-    font-weight: 500 !important;
+    font-size: 14px !important;
+
     color: #858585 !important;
+    font-family: "Poppins" !important;
 }
 
 .Product-details > .third-container {
@@ -1221,8 +1248,7 @@ nav .Right-Side a span {
 }
 
 .Product-details > .third-container > h3 {
-    font-family: Montserrat;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 .Product-details > .third-container > .row {
@@ -1235,9 +1261,9 @@ nav .Right-Side a span {
 .Product-details > .third-container > .row > .col-lg-2 img {
     width: 100% !important;
     height: 250px;
+    object-fit: cover;
 }
 .Product-details > .third-container > .row > .col-lg-2 h5 {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     color: #febb2a;
@@ -1250,16 +1276,15 @@ nav .Right-Side a span {
     overflow: hidden;
 }
 .Product-details > .third-container > .row > .col-lg-2 a {
-    font-family: Montserrat;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
-    margin: 0;
+    margin: 0.5vh 0 0 0;
     text-align: center;
     color: #737373;
 }
 .Product-details > .third-container > .row > .col-lg-2 h6 {
-    font-family: Montserrat;
-    font-size: 16px;
+    font-family: "Montserrat" !important;
+    font-size: 14px;
     font-weight: 700;
     margin: 1vh auto;
     text-align: center;
@@ -1267,6 +1292,8 @@ nav .Right-Side a span {
 }
 .Product-details > .third-container > .row > .col-lg-2 h6 span {
     color: #feba2b;
+    font-family: "Montserrat" !important;
+
     margin: 0vh auto;
 }
 .Product-details > .container-fluid > img {
@@ -1282,17 +1309,19 @@ nav .Right-Side a span {
     background-color: #8b4513;
     color: #fff;
     width: 100%;
-    padding: 1vh 1vw;
+    padding: 1vh 0vw;
     border: none;
     font-family: Montserrat !important;
+    font-size: 14px;
 }
 .Product-details > .third-container > .row > .col-lg-2 form a {
     background-color: #8b4513;
     color: #fff;
     width: 100% !important;
-    padding: 1.5vh 53px;
+    padding: 1.5vh 55px;
     border: none;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
     font-family: Montserrat !important;
 }
 .Product-details > .third-container > .row > .col-lg-2 .wishlist-btn {
@@ -1313,7 +1342,7 @@ nav .Right-Side a span {
 }
 .Product-details > .third-container > .row > .col-lg-2 .rating span {
     color: #00000079;
-    font-family: Poppins;
+    font-family: "Poppins";
     font-size: 12px;
     font-weight: 600;
 }
@@ -1526,29 +1555,35 @@ nav .Right-Side a span {
     align-items: center;
 }
 .cart .first-container .row h3 {
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
     font-weight: 600;
 }
 .cart .first-container .row img {
     width: 50px;
     height: 50px;
+    object-fit: cover !important;
 }
 .cart .first-container .row p {
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
+    font-family: "poppins" !important;
 }
 .cart .first-container .row input {
     width: 60px;
+    font-size: 12px;
+
     border: 1px solid #000;
     padding: 1vh 0.5vw;
 }
 .cart .first-container .row .close {
-    top: 38%;
+    top: 40%;
     left: 88%;
+    font-size: 10px;
     color: #8b4513;
     cursor: pointer;
+    font-weight: 600;
 }
 .cart .first-container .d-flex {
     justify-content: space-between;
@@ -1556,29 +1591,25 @@ nav .Right-Side a span {
 .cart .first-container .d-flex a {
     border: 2px solid #00000080;
     background: transparent;
-    padding: 0.7vh 1vw;
-    border-radius: 5px;
+    padding: 0.7vh 1.3vw;
+    border-radius: 7px;
     color: #000;
+    font-size: 13px;
 }
-.cart .first-container .d-flex button {
-    border: 2px solid #00000080;
-    background: transparent;
-    padding: 0.7vh 1vw;
-    border-radius: 5px;
-    color: #000;
-}
-.cart .second-container input {
+
+/* .cart .second-container input {
     border: 1px solid black;
     padding: 2vh 0.5vw;
     border-radius: 5px;
-}
+    font-size: 14px !important;
+} */
 .cart .second-container button {
     background: #febb2a;
     padding: 1vh 1vw;
     border: 1px solid #febb2a;
     border-radius: 5px;
     color: #fff;
-    font-size: 15px;
+    font-size: 12px !important;
     font-weight: 700;
     margin: 0vh 1vw !important;
 }
@@ -1588,26 +1619,30 @@ nav .Right-Side a span {
     border: 1px solid #febb2a;
     border-radius: 5px;
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
     margin: 0vh 1vw;
 }
 .cart .second-container .cart-total {
-    border: 2px solid #0000008e;
-    border-radius: 5px;
+    /* border: 1px solid #0000008e; */
+    border-radius: 10px;
     padding: 4vh 1vw;
+    box-shadow: 0px 0px 10px 0px #00000033;
 }
 .cart .second-container .cart-total .d-flex {
     justify-content: space-between;
     /* margin: 1vh 0vw; */
 }
 .cart .second-container .cart-total h4 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 3vh;
 }
 .cart .second-container .cart-total a {
     /* background-image: linear-gradient(); */
     margin: 3vh auto 1vw auto !important;
+}
+.cart .second-container .cart-total h6 {
+    font-size: 14px !important;
 }
 /* -----------------------------check out ----------------------------- */
 .checkOut > .first-container > h1 {
@@ -1875,7 +1910,7 @@ footer > .first-container-footer > .row > .col-lg-6 {
 }
 footer > .first-container-footer > .row > .col-lg-6 h1 {
     font-family: Poppins;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
 }
@@ -1888,15 +1923,18 @@ footer > .first-container-footer > .row > .col-lg-6 form input {
 }
 footer > .first-container-footer > .row > .col-lg-6 form input::placeholder {
     text-align: center;
+    font-size: 14px;
 }
 footer > .first-container-footer > .row > .col-lg-6 form button {
     border: none;
     padding: 1vh 1vw;
+    font-size: 14px;
+
     width: 330px;
     border-radius: 30px;
     background: #fff;
     color: #feba2a;
-    font-weight: 700;
+    font-weight: 600;
 }
 footer .footer-second-section {
     display: flex;
@@ -1906,7 +1944,7 @@ footer .row .col-md-6 {
     margin: 3vh auto !important;
 }
 footer > .row > .col-lg-3 p {
-    font-family: Montserrat;
+    font-family: "poppins" !important;
     font-size: 12px;
     font-weight: 400;
     margin: 1vh 0vw;
@@ -1922,7 +1960,7 @@ footer .row .col-lg-2 {
     margin: 2vh 0vw;
 }
 footer .row .col-lg-2 h6 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
 }
 footer .row .col-lg-2 ul {
@@ -1933,8 +1971,8 @@ footer .row .col-lg-2 ul li {
     margin: 1vh 0vw;
 }
 footer .row .col-lg-2 ul li a {
-    font-size: 16px;
-    /* font-weight: 500; */
+    font-size: 12px;
+    font-weight: 500;
     color: #00000099;
 }
 footer > .container > .d-flex {
@@ -1956,6 +1994,7 @@ footer .d-flex .logos > img {
 .links > a {
     margin: 0vh 1vw;
     font-weight: 600;
+    font-size: 12px !important;
 }
 .links > .disable {
     color: gray;
@@ -2146,7 +2185,7 @@ footer .d-flex .logos > img {
     letter-spacing: -2px;
     word-spacing: 5px;
     border-bottom: 2px solid #8b4513;
-    width: 150px;
+    width: 140px;
     margin: 4vh auto;
 }
 .Sign-In > .container input,
@@ -2155,6 +2194,8 @@ footer .d-flex .logos > img {
     margin: 1vh 0vw;
     border: 1px solid #000;
     padding: 1vh 1vw;
+    border-radius: 10px !important;
+    font-size: 14px;
 }
 .Sign-In > .container button,
 .Register > .container button {
@@ -2165,12 +2206,17 @@ footer .d-flex .logos > img {
     padding: 1vh 1vw;
     color: #fff;
     font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px !important;
 }
 .Sign-In > .container p,
 .Register > .container p {
     font-size: 12px;
     text-align: left;
     margin: 2vh 0vw;
+    color: gray !important;
+    font-weight: 600;
+    font-family: "Poppins" !important ;
 }
 .Sign-In > .container p a,
 .Register > .container p a {
