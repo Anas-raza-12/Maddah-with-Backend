@@ -40,6 +40,7 @@ a {
 .top-line {
     background: #8b4513;
     color: white;
+    
 }
 .top-line > .row > .d-flex {
     align-items: center;
@@ -50,8 +51,8 @@ a {
 }
 .top-line > .row > .d-flex a {
     color: white;
-    /* font-weight: 700; */
-    font-size: 12px !important;
+    font-weight: 500 !important; 
+    font-size: 12px  !important;
 }
 
 .category-section-2 > div {
@@ -168,6 +169,8 @@ nav .Right-Side a span {
     font-weight: 400;
     line-height: 30px;
     margin: 2vh 0vw;
+    font-family: "poppins" !important;
+
 }
 .Home > .first-container .d-flex a {
     background-color: #000;
@@ -334,6 +337,7 @@ nav .Right-Side a span {
     font-size: 16px;
     font-weight: 500;
     margin: 1vh auto;
+    font-family: "poppins" !important;
 }
 
 .Home > .third-container > a {
@@ -372,7 +376,7 @@ nav .Right-Side a span {
 
 .Home > .forth-container .row h1 {
     color: #252b42;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 0.20000000298023224px;
@@ -383,6 +387,8 @@ nav .Right-Side a span {
     font-size: 16px;
     font-weight: 500;
     margin: 1vh auto;
+    font-family: "poppins" !important;
+
 }
 .Home > .fivth-container {
     margin: 5vh auto;
@@ -403,9 +409,11 @@ nav .Right-Side a span {
 }
 .Home > .fivth-container p {
     color: #737373;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     margin: 1vh auto;
+    font-family: "poppins" !important;
+
 }
 .Home > .fivth-container .row {
     margin: 5vh auto;
@@ -429,12 +437,14 @@ nav .Right-Side a span {
     font-weight: 500;
     margin: 1vh auto;
     text-align: center;
+    font-family: "poppins" !important;
+
 }
 .Home > .payment-methods {
     margin: 5vh auto !important;
 }
 .Home .payment-methods > h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 50px;
     color: #252b42;
@@ -444,13 +454,15 @@ nav .Right-Side a span {
     font-size: 16px;
     font-weight: 500;
     margin: 1vh auto;
+    font-family: "poppins" !important;
+
 }
 .Home > .sixth-container {
     text-align: center;
     margin: 5vh auto;
 }
 .Home > .sixth-container > h2 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 32px;
     margin: 1vh auto;
@@ -458,7 +470,7 @@ nav .Right-Side a span {
 }
 
 .Home > .sixth-container > h1 {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 50px;
     color: #252b42;
@@ -479,7 +491,7 @@ nav .Right-Side a span {
     border-radius: 10px;
     color: #fff;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
 }
 .Home .sixth-container .row .icon {
     bottom: 10px;
@@ -519,6 +531,8 @@ nav .Right-Side a span {
 }
 .Home .sixth-container .row .col-lg-8 .d-flex span p {
     font-size: 10px;
+    font-family: "poppins" !important;
+
 }
 .Home .sixth-container .row .col-lg-8 .d-flex i {
     color: #feba2a;
@@ -534,9 +548,11 @@ nav .Right-Side a span {
     text-align: left;
 }
 .Home .sixth-container .row .col-lg-8 p {
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: 14px;
+
     color: #737373;
+    font-family: "poppins" !important;
+
 }
 .Home .sixth-container .row .col-lg-8 .sale {
     background: transparent;
@@ -549,20 +565,24 @@ nav .Right-Side a span {
 }
 .Home .sixth-container .row .col-lg-8 .sale p {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     color: #737373;
     margin: 0;
     padding: 0;
+    font-family: "poppins" !important;
+
 }
 .Home .sixth-container .row .col-lg-8 h6 {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
     color: #737373;
 }
 .Home .sixth-container .row .col-lg-8 h6 span {
     color: #feba2a;
     margin: 0vh 0.5vw;
+    font-family: "Montserrat" !important;
+
 }
 .Home .sixth-container .row .col-lg-8 .item-color {
     width: 120px !important;
@@ -577,14 +597,15 @@ nav .Right-Side a span {
 }
 .Home .sixth-container .row .col-lg-8 .product-features span {
     margin: 0vh 0.5vw;
+
 }
 .Home .sixth-container .row .col-lg-8 .button {
     color: #23a6f0;
     border: 1px solid #23a6f0;
     border-radius: 50px;
     padding: 1vh 1vw;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 /* ----------------------------- Shop ----------------------------- */
@@ -1945,7 +1966,7 @@ footer .row .col-md-6 {
 }
 footer > .row > .col-lg-3 p {
     font-family: "poppins" !important;
-    font-size: 12px;
+    font-size: 10px !important;
     font-weight: 400;
     margin: 1vh 0vw;
 }

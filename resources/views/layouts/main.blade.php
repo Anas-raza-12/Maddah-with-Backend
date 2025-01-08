@@ -13,8 +13,20 @@
         <!-- ------------------ bootsRap Link ------------------ -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
         <!-- ------------------ Fonts-awesome Link ------------------ -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+            integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- ------------------Google Link ------------------ -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -118,7 +130,10 @@
             <div class="first-container-footer container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h1>STAY UPTO DATE ABOUT OUR <br> mai  LATEST OFFERS</h1>
+                        <h1>
+                            STAY UPTO DATE ABOUT OUR <br />
+                            mai LATEST OFFERS
+                        </h1>
                     </div>
                     <div class="col-lg-6">
                         <form action="{{ route('promoemail') }}" method="POST">
@@ -150,7 +165,7 @@
                     <div class="footer-second-section">
                         <div class="col-lg-3 col-md-4">
                             <a href="{{ route('home') }}"><img src="{{ asset('assets/image/LOGO.png') }}" alt="" /></a>
-                            <p class="my-3">
+                            <p style="font-family: 'poppins' !important;" class="my-3">
                                 Lorem ipsum dolor sit amet consectetur. Mattis vitae vitae est venenatis egestas pharetra
                             </p>
                         </div>
@@ -164,35 +179,6 @@
                             </ul>
                         </div>
                     </div>
-                    {{--
-                    <div class="col-lg-2 col-md-4">
-                        <h6>Help</h6>
-                        <ul>
-                            <li><a href="">Customer Support</a></li>
-                            <li><a href="">Delivery Details</a></li>
-                            <li><a href="">Terms & Conditions</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-4">
-                        <h6>FAQ</h6>
-                        <ul>
-                            <li><a href="">Account</a></li>
-                            <li><a href="">Manage Deliveries</a></li>
-                            <li><a href="">Orders</a></li>
-                            <li><a href="">Payments</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-4">
-                        <h6>Resources</h6>
-                        <ul>
-                            <li><a href="">Free eBooks</a></li>
-                            <li><a href="">Development Tutorial</a></li>
-                            <li><a href="">How to - Blog</a></li>
-                            <li><a href="">Youtube Playlist</a></li>
-                        </ul>
-                    </div>
-                    --}}
                 </div>
                 <hr />
                 <div class="d-flex">
