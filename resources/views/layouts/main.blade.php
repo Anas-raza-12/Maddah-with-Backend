@@ -15,15 +15,8 @@
         <!-- ------------------ Fonts-awesome Link ------------------ -->
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
-            integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g=="
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
@@ -42,10 +35,12 @@
             <div class="container-fluid p-0 m-0 top-line">
                 <div class="row align-items-center text-center text-lg-start">
                     <div class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2"><i class="fa-solid fa-phone me-2"></i> <a href="tel: +92 341 0819871">+92 341 0819871</a></div>
-                    <div class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2 text-center">
+                    <div class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2">
                         <i class="fa-regular fa-envelope me-2"></i> <a href="mailto: info@maddahrhythmexpert.com"> info@maddahrhythmexpert.com</a>
                     </div>
-                    <div class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2"></div>
+                    <div class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2">
+                        
+                    </div>
                     <div class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start align-items-center py-2">
                         Follow Us:
                         <a href="/" class="ms-2" aria-label="Instagram">
@@ -85,7 +80,7 @@
                                 <a class="nav-link active shop" aria-current="page" href="{{ route('shop') }}">Shop</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link about" href="{{ route('about') }}">About</a>
+                                <a class="nav-link about " href="{{ route('about') }}">About</a>
                             </li>
 
                             <li class="nav-item">
@@ -105,16 +100,18 @@
                                     <a href="{{ route('login') }}">Login</a> / <a href="{{ route('register') }}">Register</a>
                                     @endif
                                 </span>
-                                @php $cart = Session::get('cart', []); $cartItemCount = count($cart); // Count the number of items in the cart @endphp
+                                @php
+                                    $cart = Session::get('cart', []);
+                                    $cartItemCount = count($cart); // Count the number of items in the cart
+                                @endphp
 
                                 <a href="{{ route('cart.view') }}">
                                     <span class="mx-1"><i class="fa-solid fa-cart-shopping"></i> {{ $cartItemCount ?? 0 }}</span>
                                 </a>
                                 <a href="{{ route('wishlist') }}">
                                     <span>
-                                        <i class="fa-regular fa-heart"></i>
-                                        <span id="wishlistCountNumber">{{ $wishlistCount ?? 0 }}</span>
-                                        <!-- Display initial wishlist count here -->
+                                        <i class="fa-regular fa-heart"></i> 
+                                        <span id="wishlistCountNumber">{{ $wishlistCount ?? 0 }}</span>  <!-- Display initial wishlist count here -->
                                     </span>
                                 </a>
                             </a>
@@ -130,10 +127,7 @@
             <div class="first-container-footer container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <h1>
-                            STAY UPTO DATE ABOUT OUR <br />
-                            mai LATEST OFFERS
-                        </h1>
+                        <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
                     </div>
                     <div class="col-lg-6">
                         <form action="{{ route('promoemail') }}" method="POST">
@@ -162,23 +156,50 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="footer-second-section">
-                        <div class="col-lg-3 col-md-4">
-                            <a href="{{ route('home') }}"><img src="{{ asset('assets/image/LOGO.png') }}" alt="" /></a>
-                            <p style="font-family: 'poppins' !important;" class="my-3">
-                                Lorem ipsum dolor sit amet consectetur. Mattis vitae vitae est venenatis egestas pharetra
-                            </p>
-                        </div>
-                        <div class="col-lg-2 col-md-4">
-                            <h6>Maddah Rhythm Expert</h6>
-                            <ul>
-                                <li><a href="{{ route('home') }}">Home</a></li>
-                                <li><a href="{{ route('shop') }}">shop</a></li>
-                                <li><a href="{{ route('about') }}">About us</a></li>
-                                <li><a href="{{ route('contact') }}">Cantact Us</a></li>
-                            </ul>
-                        </div>
+                   <div class="footer-second-section">
+                    <div class="col-lg-3 col-md-4">
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/image/LOGO.png') }}" alt="" /></a>
+                        <p class="my-3">
+                            Lorem ipsum dolor sit amet consectetur. Mattis vitae vitae est venenatis egestas pharetra
+                        </p>
                     </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h6>Maddah Rhythm Expert</h6>
+                        <ul>
+                            <li><a href="{{ route('home') }}">Home</a></li>
+                            <li><a href="{{ route('shop') }}">shop</a></li>
+                            <li><a href="{{ route('about') }}">About us</a></li>
+                            <li><a href="{{ route('contact') }}">Cantact Us</a></li>
+                        </ul>
+                    </div>
+                   </div>
+                    {{-- <div class="col-lg-2 col-md-4">
+                        <h6>Help</h6>
+                        <ul>
+                            <li><a href="">Customer Support</a></li>
+                            <li><a href="">Delivery Details</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h6>FAQ</h6>
+                        <ul>
+                            <li><a href="">Account</a></li>
+                            <li><a href="">Manage Deliveries</a></li>
+                            <li><a href="">Orders</a></li>
+                            <li><a href="">Payments</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <h6>Resources</h6>
+                        <ul>
+                            <li><a href="">Free eBooks</a></li>
+                            <li><a href="">Development Tutorial</a></li>
+                            <li><a href="">How to - Blog</a></li>
+                            <li><a href="">Youtube Playlist</a></li>
+                        </ul>
+                    </div> --}}
                 </div>
                 <hr />
                 <div class="d-flex">
@@ -207,3 +228,4 @@
     <!-- Include Slick JS -->
     <script type="text/javascript" src="path/to/slick.min.js"></script>
 </html>
+ 

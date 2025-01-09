@@ -41,10 +41,10 @@
 </div>
 <div class="second-container container text-center">
    
-    <h4>
+    <h5>
         Featured Products
-    </h4>
-    <h2>ALL PRODUCTS</h2>
+    </h5>
+    <h3>ALL PRODUCTS</h3>
     <p>Browse our complete range of products</p>
     <div class="row mt-5 item ">
         @foreach ($products as $product)
