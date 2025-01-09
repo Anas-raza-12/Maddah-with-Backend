@@ -19,22 +19,22 @@
                   <a href="{{ route('shop') }}">SHOP NOW</a>
               </div>
           </div>
-          <div data-aos-duration="1000" data-aos="fade-left" class="col-lg-6 col-md-6 img d-flex position-relative">
-              <section class="slider">
+          <div style=" background-image:url('assets/image/Group 11.png'); background-repeat:no-repeat ; background-position: center center;  background-size: contain;" data-aos-duration="1000" data-aos="fade-left" class="col-lg-6 col-md-6 img d-flex position-relative">
+              <section  class="slider">
                   <div class="slide one">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/Group 15.png') }}" alt="" />
                   </div>
                   <div class="slide two">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/Group 15.png') }}" alt="" />
                   </div>
                   <div class="slide three">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/Group 15.png') }}" alt="" />
                   </div>
                   <div class="slide four">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/Group 15.png') }}" alt="" />
                   </div>
                   <div class="slide four">
-                      <img src="{{ asset('assets/image/hero-cover-1.png') }}" alt="" />
+                      <img src="{{ asset('assets/image/Group 15.png') }}" alt="" />
                   </div>
               </section>
 
