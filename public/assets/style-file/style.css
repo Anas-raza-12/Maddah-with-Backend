@@ -199,31 +199,32 @@ nav .Right-Side a span {
     background-color: #feba2a;
     border-radius: 50px;
     width: 90%;
+
     margin: 2vh auto;
 }
-.Home > .first-container .d-flex {
+.Home > .first-container .container  .row .d-flex {
     align-items: center;
     justify-content: center;
 }
-.Home > .first-container .d-flex h5 {
+.Home > .first-container .container  .row  .d-flex h5 {
     font-size: 18px;
     font-weight: 600;
     color: #fff;
-    margin: 1vh 0vw;
+    margin: 1vh 0vw !important;
 }
-.Home > .first-container .d-flex h1 {
+.Home > .first-container .container  .row  .d-flex h1 {
     color: #8b4513;
     font-size: 50px;
     font-weight: 800;
-    line-height: 60px;
+    
 }
-.Home > .first-container .d-flex p {
+.Home > .first-container .container  .row  .d-flex p {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     margin: 2vh 0vw;
 }
-.Home > .first-container .container div  .d-flex a {
+.Home > .first-container .container  .row  .d-flex a {
     border: none;
     background-color: #000;
     color: #fff;
